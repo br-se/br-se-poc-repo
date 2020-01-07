@@ -1,0 +1,627 @@
+{
+  "metadata": {
+    "configurationVersions": [
+      4,
+      2
+    ],
+    "clusterVersion": {
+      "major": 0,
+      "minor": 0,
+      "revision": 0,
+      "sourceRevision": "",
+      "timestamp": ""
+    }
+  },
+  "dashboardMetadata": {
+    "name": "Ecossistemas e Infraestrutura",
+    "shared": true,
+    "sharingDetails": {
+      "linkShared": true,
+      "published": false
+    },
+    "dashboardFilter": {
+      "timeframe": "",
+      "managementZone": null
+	  
+	  
+	  
+    }
+  },
+  "tiles": [
+    {
+      "name": "",
+      "tileType": "HOSTS",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 0,
+        "width": 608,
+        "height": 304
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "filterConfig": {
+        "type": "HOST",
+        "customName": "Servidores",
+        "defaultName": "Servidores",
+        "chartConfig": {
+          "type": "TIMESERIES",
+          "series": [],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      },
+      "chartVisible": true
+    },
+    {
+      "name": "",
+      "tileType": "HOSTS",
+      "configured": true,
+      "bounds": {
+        "top": 342,
+        "left": 0,
+        "width": 304,
+        "height": 304
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "filterConfig": {
+        "type": "HOST",
+        "customName": "Linux",
+        "defaultName": "Linux",
+        "chartConfig": {
+          "type": "TIMESERIES",
+          "series": [],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {
+          "HOST": {
+            "HOST_OPERATING_SYSTEM": [
+              "2"
+            ]
+          }
+        }
+      },
+      "chartVisible": true
+    },
+    {
+      "name": "",
+      "tileType": "HOSTS",
+      "configured": true,
+      "bounds": {
+        "top": 342,
+        "left": 304,
+        "width": 304,
+        "height": 304
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "filterConfig": {
+        "type": "HOST",
+        "customName": "Windows",
+        "defaultName": "Windows",
+        "chartConfig": {
+          "type": "TIMESERIES",
+          "series": [],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {
+          "HOST": {
+            "HOST_OPERATING_SYSTEM": [
+              "1"
+            ]
+          }
+        }
+      },
+      "chartVisible": true
+    },
+    {
+      "name": "Servidores",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 0,
+        "width": 608,
+        "height": 38
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      }
+    },
+    {
+      "name": "",
+      "tileType": "SERVICES",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 608,
+        "width": 608,
+        "height": 304
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "filterConfig": {
+        "type": "NON_DATABASE_SERVICE",
+        "customName": "Serviços",
+        "defaultName": "Serviços",
+        "chartConfig": {
+          "type": "TIMESERIES",
+          "series": [],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      },
+      "chartVisible": true
+    },
+    {
+      "name": "Database health",
+      "tileType": "DATABASES_OVERVIEW",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 1216,
+        "width": 608,
+        "height": 304
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "filterConfig": null,
+      "chartVisible": true
+    },
+    {
+      "name": "Network status",
+      "tileType": "NETWORK_MEDIUM",
+      "configured": true,
+      "bounds": {
+        "top": 646,
+        "left": 1824,
+        "width": 304,
+        "height": 152
+      },
+      "tileFilter": {
+        "timeframe": "Today",
+        "managementZone": null
+      }
+    },
+    {
+      "name": "Network metrics",
+      "tileType": "NETWORK",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 1824,
+        "width": 304,
+        "height": 304
+      },
+      "tileFilter": {
+        "timeframe": "Today",
+        "managementZone": null
+      }
+    },
+    {
+      "name": "Rede",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 1824,
+        "width": 304,
+        "height": 38
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      }
+    },
+    {
+      "name": "Serviços",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 608,
+        "width": 608,
+        "height": 38
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 646,
+        "left": 0,
+        "width": 304,
+        "height": 304
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Média de consumo CPU %",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "type": "TOP_LIST",
+          "series": [
+            {
+              "metric": "builtin:host.cpu.usage",
+              "aggregation": "AVG",
+              "percentile": null,
+              "type": "LINE",
+              "entityType": "HOST",
+              "dimensions": [],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 646,
+        "left": 304,
+        "width": 304,
+        "height": 304
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Média consumo de Memoria %",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "type": "TOP_LIST",
+          "series": [
+            {
+              "metric": "builtin:host.mem.usage",
+              "aggregation": "AVG",
+              "percentile": null,
+              "type": "LINE",
+              "entityType": "HOST",
+              "dimensions": [],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 342,
+        "left": 1824,
+        "width": 304,
+        "height": 304
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Processo Enviados e Recebidos / segundo",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "type": "TIMESERIES",
+          "series": [
+            {
+              "metric": "builtin:host.net.bytesRx",
+              "aggregation": "AVG",
+              "percentile": null,
+              "type": "LINE",
+              "entityType": "HOST",
+              "dimensions": [],
+              "sortAscending": false,
+              "sortColumn": false,
+              "aggregationRate": "TOTAL"
+            },
+            {
+              "metric": "builtin:host.net.bytesTx",
+              "aggregation": "AVG",
+              "percentile": null,
+              "type": "LINE",
+              "entityType": "HOST",
+              "dimensions": [],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 342,
+        "left": 1216,
+        "width": 608,
+        "height": 304
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Total de Conexões no DB",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "type": "TOP_LIST",
+          "series": [
+            {
+              "metric": "builtin:service.dbconnections.total",
+              "aggregation": "NONE",
+              "percentile": null,
+              "type": "LINE",
+              "entityType": "SERVICE",
+              "dimensions": [],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Banco de Dados",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 1216,
+        "width": 608,
+        "height": 38
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 342,
+        "left": 608,
+        "width": 304,
+        "height": 304
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Média de Falha (HTTP 5xx  errors)",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "type": "SINGLE_VALUE",
+          "series": [
+            {
+              "metric": "builtin:service.errors.fivexx.rate",
+              "aggregation": "AVG",
+              "percentile": null,
+              "type": "LINE",
+              "entityType": "SERVICE",
+              "dimensions": [],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 342,
+        "left": 912,
+        "width": 304,
+        "height": 304
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Volume de HTTP 5xx ",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "type": "SINGLE_VALUE",
+          "series": [
+            {
+              "metric": "builtin:service.errors.fivexx.count",
+              "aggregation": "NONE",
+              "percentile": null,
+              "type": "LINE",
+              "entityType": "SERVICE",
+              "dimensions": [],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 646,
+        "left": 608,
+        "width": 608,
+        "height": 304
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Volume Serviços mais utilizados",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "type": "TOP_LIST",
+          "series": [
+            {
+              "metric": "builtin:service.requestCount.total",
+              "aggregation": "NONE",
+              "percentile": null,
+              "type": "LINE",
+              "entityType": "SERVICE",
+              "dimensions": [],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 646,
+        "left": 1216,
+        "width": 304,
+        "height": 304
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Média de conexões com Falha",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "type": "SINGLE_VALUE",
+          "series": [
+            {
+              "metric": "builtin:service.dbconnections.failureRate",
+              "aggregation": "AVG",
+              "percentile": null,
+              "type": "LINE",
+              "entityType": "SERVICE",
+              "dimensions": [],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Custom chart",
+      "tileType": "CUSTOM_CHARTING",
+      "configured": true,
+      "bounds": {
+        "top": 646,
+        "left": 1520,
+        "width": 304,
+        "height": 304
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "filterConfig": {
+        "type": "MIXED",
+        "customName": "Volume total de Conexões",
+        "defaultName": "Custom chart",
+        "chartConfig": {
+          "type": "SINGLE_VALUE",
+          "series": [
+            {
+              "metric": "builtin:service.dbconnections.total",
+              "aggregation": "NONE",
+              "percentile": null,
+              "type": "LINE",
+              "entityType": "SERVICE",
+              "dimensions": [],
+              "sortAscending": false,
+              "sortColumn": true,
+              "aggregationRate": "TOTAL"
+            }
+          ],
+          "resultMetadata": {}
+        },
+        "filtersPerEntityType": {}
+      }
+    },
+    {
+      "name": "Smartscape",
+      "tileType": "PURE_MODEL",
+      "configured": true,
+      "bounds": {
+        "top": 798,
+        "left": 1824,
+        "width": 304,
+        "height": 152
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      }
+    }
+  ]
+}

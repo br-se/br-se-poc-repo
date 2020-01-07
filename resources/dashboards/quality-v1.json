@@ -1,0 +1,288 @@
+{
+  "metadata": {
+    "configurationVersions": [
+      4,
+      2
+    ],
+    "clusterVersion": {
+      "major": 0,
+      "minor": 0,
+      "revision": 0,
+      "sourceRevision": "",
+      "timestamp": ""
+    }
+  },
+  "dashboardMetadata": {
+    "name": "Assessment de Qualidade",
+    "shared": true,
+    "sharingDetails": {
+      "linkShared": true,
+      "published": false
+    },
+    "dashboardFilter": {
+      "timeframe": "",
+      "managementZone": null
+	  
+	  
+	  
+    }
+  },
+  "tiles": [
+    {
+      "name": "DTAQL",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 304,
+        "width": 380,
+        "height": 266
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "customName": "TOP User Action",
+      "query": "SELECT TOP(name, 15) As \"User Action\", SUM(errorCount) AS \"Error\" FROM useraction where application = \"easytravel-ang.lab.dynatrace.org\" and errorCount >= 1 GROUP BY name order by sum(errorCount) DESC",
+      "type": "TABLE",
+      "timeFrameShift": "-1w"
+    },
+    {
+      "name": "DTAQL",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 0,
+        "width": 304,
+        "height": 266
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "customName": "Error Count Total",
+      "query": "SELECT SUM(errorCount) AS \"Error\" FROM useraction where application = \"easytravel-ang.lab.dynatrace.org\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "-1w"
+    },
+    {
+      "name": "DTAQL",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 684,
+        "width": 380,
+        "height": 266
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "customName": "TOP Browser Family",
+      "query": "SELECT TOP(usersession.browserFamily, 15) As \"Browser\", SUM(errorCount) AS \"Error\" FROM useraction where application = \"easytravel-ang.lab.dynatrace.org\" and errorCount >= 1 GROUP BY usersession.browserFamily order by sum(errorCount) DESC",
+      "type": "TABLE",
+      "timeFrameShift": "-1w"
+    },
+    {
+      "name": "DTAQL",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 1444,
+        "width": 380,
+        "height": 266
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "customName": "TOP City",
+      "query": "SELECT TOP(usersession.city, 15) As \"City\", SUM(errorCount) AS \"Error\" FROM useraction where application = \"easytravel-ang.lab.dynatrace.org\" and errorCount >= 1 GROUP BY usersession.city ORDER BY sum(errorCount) DESC",
+      "type": "TABLE",
+      "timeFrameShift": "-1w"
+    },
+    {
+      "name": "DTAQL",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 304,
+        "left": 0,
+        "width": 1824,
+        "height": 304
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "customName": "Error Count Total",
+      "query": "SELECT DATETIME(starttime, 'HH:mm', '5m'), SUM(errorCount) AS \"Error\" FROM useraction where application = \"easytravel-ang.lab.dynatrace.org\" group by DATETIME(starttime, 'HH:mm', '5m')",
+      "type": "COLUMN_CHART"
+    },
+    {
+      "name": "Error Analysis",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 0,
+        "width": 1824,
+        "height": 38
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      }
+    },
+    {
+      "name": "Performance Analisys",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 608,
+        "left": 0,
+        "width": 1824,
+        "height": 38
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      }
+    },
+    {
+      "name": "DTAQL",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 646,
+        "left": 304,
+        "width": 380,
+        "height": 266
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "customName": "TOP User Action",
+      "query": "SELECT TOP(name, 15) As \"User Action\", avg(visuallyCompleteTime) AS \"Response Time\" FROM useraction where application = \"easytravel-ang.lab.dynatrace.org\" GROUP BY name order by avg(visuallyCompleteTime) DESC",
+      "type": "TABLE",
+      "timeFrameShift": "-1w"
+    },
+    {
+      "name": "DTAQL",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 646,
+        "left": 0,
+        "width": 304,
+        "height": 266
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "customName": "Average Response Time",
+      "query": "SELECT AVG(visuallyCompleteTime) AS \"Response Time\" FROM useraction where application = \"easytravel-ang.lab.dynatrace.org\"",
+      "type": "SINGLE_VALUE",
+      "timeFrameShift": "-1w"
+    },
+    {
+      "name": "DTAQL",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 646,
+        "left": 684,
+        "width": 380,
+        "height": 266
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "customName": "TOP Browser Family",
+      "query": "SELECT TOP(usersession.browserFamily, 15) As \"Browser\", AVG(visuallyCompleteTime) AS \"Response Time\" FROM useraction where application = \"easytravel-ang.lab.dynatrace.org\" GROUP BY usersession.browserFamily order by avg(visuallyCompleteTime) DESC",
+      "type": "TABLE",
+      "timeFrameShift": "-1w"
+    },
+    {
+      "name": "DTAQL",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 646,
+        "left": 1064,
+        "width": 380,
+        "height": 266
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "customName": "TOP O.S. Family",
+      "query": "SELECT TOP(usersession.osFamily, 15) As \"Operating System\", AVG(visuallyCompleteTime) AS \"Response Time\" FROM useraction where application = \"easytravel-ang.lab.dynatrace.org\" GROUP BY usersession.osFamily order by avg(visuallyCompleteTime) DESC",
+      "type": "TABLE",
+      "timeFrameShift": "-1w"
+    },
+    {
+      "name": "DTAQL",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 912,
+        "left": 0,
+        "width": 1824,
+        "height": 304
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "customName": "Response Time",
+      "query": "SELECT DATETIME(starttime, 'HH:mm', '5m'), AVG(visuallyCompleteTime) AS \"Response Time\" FROM useraction where application = \"easytravel-ang.lab.dynatrace.org\" group by DATETIME(starttime, 'HH:mm', '5m')",
+      "type": "LINE_CHART"
+    },
+    {
+      "name": "DTAQL",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 1064,
+        "width": 380,
+        "height": 266
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "customName": "TOP O.S. Family",
+      "query": "SELECT TOP(usersession.osFamily, 15) As \"Operating System\", SUM(errorCount) AS \"Error\" FROM useraction where application = \"easytravel-ang.lab.dynatrace.org\" and errorCount >= 1 GROUP BY usersession.osFamily ORDER BY sum(errorCount) DESC",
+      "type": "TABLE",
+      "timeFrameShift": "-1w"
+    },
+    {
+      "name": "DTAQL",
+      "tileType": "DTAQL",
+      "configured": true,
+      "bounds": {
+        "top": 646,
+        "left": 1444,
+        "width": 380,
+        "height": 266
+      },
+      "tileFilter": {
+        "timeframe": null,
+        "managementZone": null
+      },
+      "customName": "TOP City",
+      "query": "SELECT TOP(usersession.city, 15) As \"City\", AVG(visuallyCompleteTime) AS \"Response Time\" FROM useraction where application = \"easytravel-ang.lab.dynatrace.org\" GROUP BY usersession.city order by avg(visuallyCompleteTime) DESC",
+      "type": "TABLE",
+      "timeFrameShift": "-1w"
+    }
+  ]
+}
