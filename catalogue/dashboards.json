@@ -1,17 +1,17 @@
 [
     {
-	"filename":"ecoinfra-v1.json"
+	"filename":"ecoinfra.json"
     },
     {
-	"filename":"centroops-v1.json"
+	"filename":"centroops.json"
     },
     {
-	"filename":"negocios-v1.json"
+	"filename":"negocios.json"
     },
     {
-	"filename":"quality-v1.json"
+	"filename":"quality.json"
     },
     {
-	"filename":"tatic-v1.json"
+	"filename":"tatic.json"
     }
 ]
