@@ -16,7 +16,7 @@
     "name": "Tático - Aplicações de Negócio",
     "shared": true,
     "sharingDetails": {
-      "linkShared": true,
+      "linkShared": false,
       "published": false
     },
     "dashboardFilter": {
