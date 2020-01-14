@@ -16,7 +16,7 @@
     "name": "Centro de Operações",
     "shared": true,
     "sharingDetails": {
-      "linkShared": false,
+      "linkShared": true,
       "published": true
     },
     "dashboardFilter": {

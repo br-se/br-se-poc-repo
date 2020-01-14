@@ -16,7 +16,7 @@
     "name": "Negócio Digital - Jornada dos Clientes",
     "shared": true,
     "sharingDetails": {
-      "linkShared": false,
+      "linkShared": true,
       "published": true
     },
     "dashboardFilter": {

@@ -9,7 +9,7 @@
     "name": "Assessment de Qualidade",
     "shared": true,
     "sharingDetails": {
-      "linkShared": false,
+      "linkShared": true,
       "published": true
     },
     "dashboardFilter": {

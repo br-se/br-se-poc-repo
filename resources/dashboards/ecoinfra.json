@@ -16,7 +16,7 @@
     "name": "Ecossistemas e Infraestrutura",
     "shared": true,
     "sharingDetails": {
-      "linkShared": false,
+      "linkShared": true,
       "published": true
     },
     "dashboardFilter": {
