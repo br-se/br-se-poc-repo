@@ -13,7 +13,7 @@
     }
   },
   "dashboardMetadata": {
-    "name": "Tático - Aplicações de Negócio",
+    "name": "Tactical - Business applications",
     "shared": true,
     "sharingDetails": {
       "linkShared": true,
@@ -44,7 +44,7 @@
       },
       "filterConfig": {
         "type": "MIXED",
-        "customName": "Indice de Satisfação - Apdex - 1 = :) ",
+        "customName": "Satisfaction index - Apdex - 1 = :)",
         "defaultName": "Custom chart",
         "chartConfig": {
           "type": "SINGLE_VALUE",
@@ -89,7 +89,7 @@
       },
       "filterConfig": {
         "type": "MIXED",
-        "customName": "Tempo Médio das ações dos usuários",
+        "customName": "Average response time of user action",
         "defaultName": "Custom chart",
         "chartConfig": {
           "type": "SINGLE_VALUE",
@@ -127,7 +127,7 @@
       },
       "filterConfig": {
         "type": "MIXED",
-        "customName": "Tempo Médio carregamento de páginas",
+        "customName": "Average page load time",
         "defaultName": "Custom chart",
         "chartConfig": {
           "type": "SINGLE_VALUE",
@@ -165,7 +165,7 @@
       },
       "filterConfig": {
         "type": "MIXED",
-        "customName": "Usuários ativos (estimado)",
+        "customName": "Active users (estimated)",
         "defaultName": "Custom chart",
         "chartConfig": {
           "type": "SINGLE_VALUE",
@@ -340,7 +340,7 @@
       },
       "filterConfig": {
         "type": "MIXED",
-        "customName": "Pirores tempos de resposta - Server side",
+        "customName": "Slowest response time - Server side",
         "defaultName": "Custom chart",
         "chartConfig": {
           "type": "TOP_LIST",
@@ -378,7 +378,7 @@
       },
       "filterConfig": {
         "type": "MIXED",
-        "customName": "Throughput de serviços",
+        "customName": "Service throughput",
         "defaultName": "Custom chart",
         "chartConfig": {
           "type": "TOP_LIST",
@@ -401,7 +401,7 @@
       }
     },
     {
-      "name": "Perspectiva cliente",
+      "name": "Client perspective",
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
@@ -416,7 +416,7 @@
       }
     },
     {
-      "name": "Perspectiva servidor",
+      "name": "Server perspective",
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
@@ -444,7 +444,7 @@
         "timeframe": null,
         "managementZone": null
       },
-      "customName": "Usabilidade - qtd rage clicks po sessão",
+      "customName": "Usability - rage clicks per session",
       "query": "select count (numberOfRageClicks) from usersession",
       "type": "SINGLE_VALUE"
     },

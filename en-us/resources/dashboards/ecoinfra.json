@@ -13,7 +13,7 @@
     }
   },
   "dashboardMetadata": {
-    "name": "Ecossistemas e Infraestrutura",
+    "name": "Ecosystem and infrastructure",
     "shared": true,
     "sharingDetails": {
       "linkShared": true,
@@ -44,8 +44,8 @@
       },
       "filterConfig": {
         "type": "HOST",
-        "customName": "Servidores",
-        "defaultName": "Servidores",
+        "customName": "Servers",
+        "defaultName": "Servers",
         "chartConfig": {
           "type": "TIMESERIES",
           "series": [],
@@ -122,7 +122,7 @@
       "chartVisible": true
     },
     {
-      "name": "Servidores",
+      "name": "Servers",
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
@@ -152,8 +152,8 @@
       },
       "filterConfig": {
         "type": "NON_DATABASE_SERVICE",
-        "customName": "Serviços",
-        "defaultName": "Serviços",
+        "customName": "Services",
+        "defaultName": "Services",
         "chartConfig": {
           "type": "TIMESERIES",
           "series": [],
@@ -211,7 +211,7 @@
       }
     },
     {
-      "name": "Rede",
+      "name": "Network",
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
@@ -226,7 +226,7 @@
       }
     },
     {
-      "name": "Serviços",
+      "name": "Services",
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
@@ -256,8 +256,8 @@
       },
       "filterConfig": {
         "type": "MIXED",
-        "customName": "Média de consumo CPU %",
-        "defaultName": "Custom chart",
+        "customName": "Average CPU consumption %",
+        "defaultName": "Average CPU consumption %",
         "chartConfig": {
           "type": "TOP_LIST",
           "series": [
@@ -294,8 +294,8 @@
       },
       "filterConfig": {
         "type": "MIXED",
-        "customName": "Média consumo de Memoria %",
-        "defaultName": "Custom chart",
+        "customName": "Average memory consumption %",
+        "defaultName": "Average memory consumption %",
         "chartConfig": {
           "type": "TOP_LIST",
           "series": [
@@ -332,8 +332,8 @@
       },
       "filterConfig": {
         "type": "MIXED",
-        "customName": "Processo Enviados e Recebidos / segundo",
-        "defaultName": "Custom chart",
+        "customName": "Bytes sent and received per second",
+        "defaultName": "Bytes sent and received per second",
         "chartConfig": {
           "type": "TIMESERIES",
           "series": [
@@ -381,8 +381,8 @@
       },
       "filterConfig": {
         "type": "MIXED",
-        "customName": "Total de Conexões no DB",
-        "defaultName": "Custom chart",
+        "customName": "Total database connections",
+        "defaultName": "Total database connections",
         "chartConfig": {
           "type": "TOP_LIST",
           "series": [
@@ -404,7 +404,7 @@
       }
     },
     {
-      "name": "Banco de Dados",
+      "name": "Database",
       "tileType": "HEADER",
       "configured": true,
       "bounds": {
@@ -434,8 +434,8 @@
       },
       "filterConfig": {
         "type": "MIXED",
-        "customName": "Média de Falha (HTTP 5xx  errors)",
-        "defaultName": "Custom chart",
+        "customName": "Average failure rate - 5xx",
+        "defaultName": "Average failure rate - 5xx",
         "chartConfig": {
           "type": "SINGLE_VALUE",
           "series": [
@@ -472,8 +472,8 @@
       },
       "filterConfig": {
         "type": "MIXED",
-        "customName": "Volume de HTTP 5xx ",
-        "defaultName": "Custom chart",
+        "customName": "HTTP 5xx count",
+        "defaultName": "HTTP 5xx count",
         "chartConfig": {
           "type": "SINGLE_VALUE",
           "series": [
@@ -510,8 +510,8 @@
       },
       "filterConfig": {
         "type": "MIXED",
-        "customName": "Volume Serviços mais utilizados",
-        "defaultName": "Custom chart",
+        "customName": "Top called services",
+        "defaultName": "Top called services",
         "chartConfig": {
           "type": "TOP_LIST",
           "series": [
@@ -548,8 +548,8 @@
       },
       "filterConfig": {
         "type": "MIXED",
-        "customName": "Média de conexões com Falha",
-        "defaultName": "Custom chart",
+        "customName": "Average failed connections",
+        "defaultName": "Average failed connections",
         "chartConfig": {
           "type": "SINGLE_VALUE",
           "series": [
@@ -586,8 +586,8 @@
       },
       "filterConfig": {
         "type": "MIXED",
-        "customName": "Volume total de Conexões",
-        "defaultName": "Custom chart",
+        "customName": "Total connections",
+        "defaultName": "Total connections",
         "chartConfig": {
           "type": "SINGLE_VALUE",
           "series": [

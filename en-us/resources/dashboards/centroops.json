@@ -13,7 +13,7 @@
     }
   },
   "dashboardMetadata": {
-    "name": "Centro de Operações",
+    "name": "Operation Center",
     "shared": true,
     "sharingDetails": {
       "linkShared": true,
@@ -190,7 +190,7 @@
       },
       "filterConfig": {
         "type": "MIXED",
-        "customName": "Taxa de Falhas - 5xx",
+        "customName": "Failure Rate - 5xx",
         "defaultName": "Custom chart",
         "chartConfig": {
           "type": "SINGLE_VALUE",
@@ -228,7 +228,7 @@
       },
       "filterConfig": {
         "type": "MIXED",
-        "customName": "Consumo de CPU por serviço",
+        "customName": "CPU consumption by service",
         "defaultName": "Custom chart",
         "chartConfig": {
           "type": "TOP_LIST",
@@ -266,7 +266,7 @@
       },
       "filterConfig": {
         "type": "MIXED",
-        "customName": "Tempo de Resposta por serviço",
+        "customName": "Response time by service",
         "defaultName": "Custom chart",
         "chartConfig": {
           "type": "TOP_LIST",
@@ -304,7 +304,7 @@
       },
       "filterConfig": {
         "type": "MIXED",
-        "customName": "Falhas de conexão Database",
+        "customName": "Database connection failure",
         "defaultName": "Custom chart",
         "chartConfig": {
           "type": "TOP_LIST",
@@ -342,7 +342,7 @@
       },
       "filterConfig": {
         "type": "MIXED",
-        "customName": "CPU disponível vs Memoria Disponível",
+        "customName": "Available CPU vs Available memory",
         "defaultName": "Custom chart",
         "chartConfig": {
           "type": "TIMESERIES",
