@@ -76,7 +76,7 @@
         "managementZone": null
       },
       "customName": "Satisfied",
-      "query": "SELECT DISTINCT count(userSessionId) as \"Sessões\" FROM usersession WHERE useraction.apdexCategory = \"SATISFIED\"",
+      "query": "SELECT DISTINCT count(userSessionId) as \"Sessions\" FROM usersession WHERE useraction.apdexCategory = \"SATISFIED\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "-2h"
     },
@@ -95,7 +95,7 @@
         "managementZone": null
       },
       "customName": "Satisfied",
-      "query": "SELECT DISTINCT DATETIME(starttime, 'MM-dd', '1d'), count(*) as \"Sessões Satisfeitas\" FROM usersession WHERE useraction.apdexCategory = \"SATISFIED\"",
+      "query": "SELECT DISTINCT DATETIME(starttime, 'MM-dd', '1d'), count(*) as \"Satisfied sessions\" FROM usersession WHERE useraction.apdexCategory = \"SATISFIED\"",
       "type": "COLUMN_CHART"
     },
     {
@@ -113,7 +113,7 @@
         "managementZone": null
       },
       "customName": "Sessions with errors",
-      "query": "select DISTINCT DATETIME(starttime, 'MM-dd', '1d'), count(*) as \"Sessões que contém erro\" FROM usersession where useraction.errorCount = 0",
+      "query": "select DISTINCT DATETIME(starttime, 'MM-dd', '1d'), count(*) as \"Sessions with errors\" FROM usersession where useraction.errorCount = 0",
       "type": "COLUMN_CHART"
     },
     {
@@ -131,7 +131,7 @@
         "managementZone": null
       },
       "customName": "Tolerating",
-      "query": "SELECT DISTINCT count(userSessionId) as \"Sessões\" FROM usersession WHERE useraction.apdexCategory = \"TOLERATING\"",
+      "query": "SELECT DISTINCT count(userSessionId) as \"Sessions\" FROM usersession WHERE useraction.apdexCategory = \"TOLERATING\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "-2h"
     },
@@ -150,7 +150,7 @@
         "managementZone": null
       },
       "customName": "Frustrated",
-      "query": "SELECT DISTINCT count(userSessionId) as \"Sessões\" FROM usersession WHERE useraction.apdexCategory = \"FRUSTRATED\"",
+      "query": "SELECT DISTINCT count(userSessionId) as \"Sessions\" FROM usersession WHERE useraction.apdexCategory = \"FRUSTRATED\"",
       "type": "SINGLE_VALUE",
       "timeFrameShift": "-2h"
     },
@@ -169,7 +169,7 @@
         "managementZone": null
       },
       "customName": "Tolerating",
-      "query": "SELECT DISTINCT DATETIME(starttime, 'MM-dd', '1d'), count(*) as \"Sessões Satisfeitas\" FROM usersession WHERE useraction.apdexCategory = \"TOLERATING\"",
+      "query": "SELECT DISTINCT DATETIME(starttime, 'MM-dd', '1d'), count(*) as \"Satisfied sessions\" FROM usersession WHERE useraction.apdexCategory = \"TOLERATING\"",
       "type": "COLUMN_CHART"
     },
     {
@@ -187,7 +187,7 @@
         "managementZone": null
       },
       "customName": "Frustrated",
-      "query": "SELECT DISTINCT DATETIME(starttime, 'MM-dd', '1d'), count(*) as \"Sessões Frustradas\" FROM usersession WHERE useraction.apdexCategory = \"FRUSTRATED\"",
+      "query": "SELECT DISTINCT DATETIME(starttime, 'MM-dd', '1d'), count(*) as \"Frustrated sessions\" FROM usersession WHERE useraction.apdexCategory = \"FRUSTRATED\"",
       "type": "COLUMN_CHART"
     },
     {
@@ -255,7 +255,7 @@
         "managementZone": null
       },
       "customName": "Top cities",
-      "query": "select top(city ,5) as 'Municípios', count(*) as '# Sessões' from usersession where city is not null GROUP BY city",
+      "query": "select top(city ,5) as 'Cities', count(*) as '# Sessions' from usersession where city is not null GROUP BY city",
       "type": "PIE_CHART"
     },
     {
@@ -273,7 +273,7 @@
         "managementZone": null
       },
       "customName": "Top states",
-      "query": "select top(region ,5) as 'Estados', count(*) as '# Sessões' from usersession where region is not null GROUP BY region",
+      "query": "select top(region ,5) as 'States', count(*) as '# Sessions' from usersession where region is not null GROUP BY region",
       "type": "PIE_CHART"
     },
     {
@@ -291,7 +291,7 @@
         "managementZone": null
       },
       "customName": "Access type",
-      "query": "select top(browserType, 6) as 'Top Browsers', count(*) as '# Sessões'  from usersession where browserType is not null GROUP BY browserType",
+      "query": "select top(browserType, 6) as 'Top Browsers', count(*) as '# Sessions'  from usersession where browserType is not null GROUP BY browserType",
       "type": "PIE_CHART"
     },
     {
@@ -309,7 +309,7 @@
         "managementZone": null
       },
       "customName": "Top browsers",
-      "query": "select top(browserMajorVersion, 6) as 'Top Browsers', count(*) as '# Sessões'  from usersession where browserMajorVersion is not null GROUP BY browserMajorVersion",
+      "query": "select top(browserMajorVersion, 6) as 'Top Browsers', count(*) as '# Sessions'  from usersession where browserMajorVersion is not null GROUP BY browserMajorVersion",
       "type": "PIE_CHART"
     },
     {
@@ -342,7 +342,7 @@
         "managementZone": null
       },
       "customName": "Satisfaction funnel - Current vs 1 week ago",
-      "query": "SELECT FUNNEL (useraction.apdexCategory =\"SATISFIED\" as \"Satisfeitos\", useraction.apdexCategory= \"TOLERATING\" as \"Tolerantes\", useraction.apdexCategory= \"FRUSTRATED\" as \"Frustrados\") FROM usersession",
+      "query": "SELECT FUNNEL (useraction.apdexCategory =\"SATISFIED\" as \"Satisfied\", useraction.apdexCategory= \"TOLERATING\" as \"Tolerating\", useraction.apdexCategory= \"FRUSTRATED\" as \"Frustrated\") FROM usersession",
       "type": "FUNNEL",
       "timeFrameShift": "-1w"
     },
