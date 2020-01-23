@@ -169,7 +169,7 @@
         "managementZone": null
       },
       "customName": "Tolerantes",
-      "query": "SELECT DISTINCT DATETIME(starttime, 'MM-dd', '1d'), count(*) as \"Sessões Satisfeitas\" FROM usersession WHERE useraction.apdexCategory = \"TOLERATING\"",
+      "query": "SELECT DISTINCT DATETIME(starttime, 'MM-dd', '1d'), count(*) as \"Sessões tolerantes\" FROM usersession WHERE useraction.apdexCategory = \"TOLERATING\"",
       "type": "COLUMN_CHART"
     },
     {
