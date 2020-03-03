@@ -151,7 +151,7 @@
         "managementZone": null
       },
       "filterConfig": {
-        "type": "NON_DATABASE_SERVICE",
+        "type": "SERVICE",
         "customName": "Services",
         "defaultName": "Services",
         "chartConfig": {
