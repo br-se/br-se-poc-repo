@@ -56,72 +56,6 @@
       "chartVisible": true
     },
     {
-      "name": "",
-      "tileType": "HOSTS",
-      "configured": true,
-      "bounds": {
-        "top": 342,
-        "left": 0,
-        "width": 304,
-        "height": 304
-      },
-      "tileFilter": {
-        "timeframe": null,
-        "managementZone": null
-      },
-      "filterConfig": {
-        "type": "HOST",
-        "customName": "Linux",
-        "defaultName": "Linux",
-        "chartConfig": {
-          "type": "TIMESERIES",
-          "series": [],
-          "resultMetadata": {}
-        },
-        "filtersPerEntityType": {
-          "HOST": {
-            "HOST_OPERATING_SYSTEM": [
-              "2"
-            ]
-          }
-        }
-      },
-      "chartVisible": true
-    },
-    {
-      "name": "",
-      "tileType": "HOSTS",
-      "configured": true,
-      "bounds": {
-        "top": 342,
-        "left": 304,
-        "width": 304,
-        "height": 304
-      },
-      "tileFilter": {
-        "timeframe": null,
-        "managementZone": null
-      },
-      "filterConfig": {
-        "type": "HOST",
-        "customName": "Windows",
-        "defaultName": "Windows",
-        "chartConfig": {
-          "type": "TIMESERIES",
-          "series": [],
-          "resultMetadata": {}
-        },
-        "filtersPerEntityType": {
-          "HOST": {
-            "HOST_OPERATING_SYSTEM": [
-              "1"
-            ]
-          }
-        }
-      },
-      "chartVisible": true
-    },
-    {
       "name": "Servers",
       "tileType": "HEADER",
       "configured": true,
@@ -245,10 +179,10 @@
       "tileType": "CUSTOM_CHARTING",
       "configured": true,
       "bounds": {
-        "top": 646,
+        "top": 342,
         "left": 0,
         "width": 304,
-        "height": 304
+        "height": 608
       },
       "tileFilter": {
         "timeframe": null,
@@ -283,10 +217,10 @@
       "tileType": "CUSTOM_CHARTING",
       "configured": true,
       "bounds": {
-        "top": 646,
+        "top": 342,
         "left": 304,
         "width": 304,
-        "height": 304
+        "height": 608
       },
       "tileFilter": {
         "timeframe": null,
