@@ -35,21 +35,18 @@
                 "width": 304,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
                 "customName": "Indice de Satisfação - Apdex - 1 = :) ",
                 "defaultName": "Custom chart",
                 "chartConfig": {
+                    "legendShown": true,
                     "type": "SINGLE_VALUE",
                     "series": [
                         {
                             "metric": "builtin:apps.web.apdex.userType",
                             "aggregation": "AVG",
-                            "percentile": null,
                             "type": "LINE",
                             "entityType": "APPLICATION",
                             "dimensions": [
@@ -80,21 +77,18 @@
                 "width": 304,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
                 "customName": "Tempo Médio das ações dos usuários",
                 "defaultName": "Custom chart",
                 "chartConfig": {
+                    "legendShown": true,
                     "type": "SINGLE_VALUE",
                     "series": [
                         {
                             "metric": "builtin:apps.web.firstByte.xhr.browser",
                             "aggregation": "AVG",
-                            "percentile": null,
                             "type": "LINE",
                             "entityType": "APPLICATION",
                             "dimensions": [],
@@ -118,21 +112,18 @@
                 "width": 304,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
                 "customName": "Tempo Médio carregamento de páginas",
                 "defaultName": "Custom chart",
                 "chartConfig": {
+                    "legendShown": true,
                     "type": "SINGLE_VALUE",
                     "series": [
                         {
                             "metric": "builtin:apps.web.firstByte.load.browser",
                             "aggregation": "AVG",
-                            "percentile": null,
                             "type": "LINE",
                             "entityType": "APPLICATION",
                             "dimensions": [],
@@ -156,21 +147,18 @@
                 "width": 304,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
                 "customName": "Usuários ativos (estimado)",
                 "defaultName": "Custom chart",
                 "chartConfig": {
+                    "legendShown": true,
                     "type": "SINGLE_VALUE",
                     "series": [
                         {
                             "metric": "builtin:apps.web.activeUsersEst",
                             "aggregation": "NONE",
-                            "percentile": null,
                             "type": "LINE",
                             "entityType": "APPLICATION",
                             "dimensions": [
@@ -207,10 +195,7 @@
                 "width": 304,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "assignedEntities": [
                 "APPLICATION-7165B1F7906D2529"
             ]
@@ -225,10 +210,7 @@
                 "width": 304,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "assignedEntities": [
                 "APPLICATION-7165B1F7906D2529"
             ]
@@ -243,10 +225,7 @@
                 "width": 304,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "assignedEntities": [
                 "APPLICATION-7165B1F7906D2529"
             ]
@@ -261,12 +240,8 @@
                 "width": 304,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
-            "assignedEntities": [],
-            "metric": null
+            "tileFilter": {},
+            "assignedEntities": []
         },
         {
             "name": "Resources",
@@ -278,10 +253,7 @@
                 "width": 304,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "assignedEntities": [
                 "APPLICATION-7165B1F7906D2529"
             ],
@@ -297,10 +269,7 @@
                 "width": 304,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "assignedEntities": [
                 "APPLICATION-7165B1F7906D2529"
             ],
@@ -316,10 +285,7 @@
                 "width": 304,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            }
+            "tileFilter": {}
         },
         {
             "name": "",
@@ -331,24 +297,28 @@
                 "width": 380,
                 "height": 456
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
                 "customName": "Pirores tempos de resposta - Server side",
                 "defaultName": "Custom chart",
                 "chartConfig": {
+                    "legendShown": true,
                     "type": "TOP_LIST",
                     "series": [
                         {
                             "metric": "builtin:service.response.time",
                             "aggregation": "MAX",
-                            "percentile": null,
                             "type": "LINE",
                             "entityType": "SERVICE",
-                            "dimensions": [],
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
                             "sortAscending": false,
                             "sortColumn": true,
                             "aggregationRate": "TOTAL"
@@ -369,24 +339,28 @@
                 "width": 380,
                 "height": 456
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
                 "customName": "Throughput de serviços",
                 "defaultName": "Custom chart",
                 "chartConfig": {
+                    "legendShown": true,
                     "type": "TOP_LIST",
                     "series": [
                         {
                             "metric": "builtin:service.requestCount.total",
                             "aggregation": "NONE",
-                            "percentile": null,
                             "type": "LINE",
                             "entityType": "SERVICE",
-                            "dimensions": [],
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
                             "sortAscending": false,
                             "sortColumn": true,
                             "aggregationRate": "TOTAL"
@@ -407,10 +381,7 @@
                 "width": 266,
                 "height": 38
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            }
+            "tileFilter": {}
         },
         {
             "name": "Perspectiva servidor",
@@ -422,10 +393,7 @@
                 "width": 266,
                 "height": 38
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            }
+            "tileFilter": {}
         },
         {
             "name": "DTAQL",
@@ -437,10 +405,7 @@
                 "width": 304,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "customName": "Usabilidade - qtd rage clicks po sessão",
             "query": "select count (numberOfRageClicks) from usersession",
             "type": "SINGLE_VALUE"
@@ -455,10 +420,7 @@
                 "width": 304,
                 "height": 152
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "markdown": "## Diagnostic Tools\n\n[Análise de Requsições](#topglobalwebrequests;gtf=l_2_HOURS;gf=all)\n\n[Análise de Exceptions](#exceptionsoverview;gtf=l_2_HOURS;gf=all)\n\n[Análise de Queries](#topdbstatements;gtf=l_2_HOURS;gf=all)"
         }
     ]

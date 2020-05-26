@@ -35,15 +35,13 @@
                 "width": 608,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "filterConfig": {
                 "type": "HOST",
                 "customName": "Servers",
                 "defaultName": "Servers",
                 "chartConfig": {
+                    "legendShown": true,
                     "type": "TIMESERIES",
                     "series": [],
                     "resultMetadata": {}
@@ -62,10 +60,7 @@
                 "width": 608,
                 "height": 38
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            }
+            "tileFilter": {}
         },
         {
             "name": "",
@@ -77,15 +72,13 @@
                 "width": 608,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "filterConfig": {
                 "type": "SERVICE",
                 "customName": "Services",
                 "defaultName": "Services",
                 "chartConfig": {
+                    "legendShown": true,
                     "type": "TIMESERIES",
                     "series": [],
                     "resultMetadata": {}
@@ -104,11 +97,7 @@
                 "width": 608,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
-            "filterConfig": null,
+            "tileFilter": {},
             "chartVisible": true
         },
         {
@@ -122,8 +111,7 @@
                 "height": 152
             },
             "tileFilter": {
-                "timeframe": "Today",
-                "managementZone": null
+                "timeframe": "Today"
             }
         },
         {
@@ -137,8 +125,7 @@
                 "height": 304
             },
             "tileFilter": {
-                "timeframe": "Today",
-                "managementZone": null
+                "timeframe": "Today"
             }
         },
         {
@@ -151,10 +138,7 @@
                 "width": 304,
                 "height": 38
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            }
+            "tileFilter": {}
         },
         {
             "name": "Services",
@@ -166,10 +150,7 @@
                 "width": 608,
                 "height": 38
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            }
+            "tileFilter": {}
         },
         {
             "name": "Custom chart",
@@ -181,24 +162,28 @@
                 "width": 304,
                 "height": 608
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
                 "customName": "Average CPU consumption %",
                 "defaultName": "Average CPU consumption %",
                 "chartConfig": {
+                    "legendShown": true,
                     "type": "TOP_LIST",
                     "series": [
                         {
                             "metric": "builtin:host.cpu.usage",
                             "aggregation": "AVG",
-                            "percentile": null,
                             "type": "LINE",
                             "entityType": "HOST",
-                            "dimensions": [],
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.host",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
                             "sortAscending": false,
                             "sortColumn": true,
                             "aggregationRate": "TOTAL"
@@ -219,24 +204,28 @@
                 "width": 304,
                 "height": 608
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
                 "customName": "Average memory consumption %",
                 "defaultName": "Average memory consumption %",
                 "chartConfig": {
+                    "legendShown": true,
                     "type": "TOP_LIST",
                     "series": [
                         {
                             "metric": "builtin:host.mem.usage",
                             "aggregation": "AVG",
-                            "percentile": null,
                             "type": "LINE",
                             "entityType": "HOST",
-                            "dimensions": [],
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.host",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
                             "sortAscending": false,
                             "sortColumn": true,
                             "aggregationRate": "TOTAL"
@@ -257,21 +246,18 @@
                 "width": 304,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
                 "customName": "Bytes sent and received per second",
                 "defaultName": "Bytes sent and received per second",
                 "chartConfig": {
+                    "legendShown": true,
                     "type": "TIMESERIES",
                     "series": [
                         {
                             "metric": "builtin:host.net.bytesRx",
                             "aggregation": "AVG",
-                            "percentile": null,
                             "type": "LINE",
                             "entityType": "HOST",
                             "dimensions": [],
@@ -282,7 +268,6 @@
                         {
                             "metric": "builtin:host.net.bytesTx",
                             "aggregation": "AVG",
-                            "percentile": null,
                             "type": "LINE",
                             "entityType": "HOST",
                             "dimensions": [],
@@ -306,24 +291,28 @@
                 "width": 608,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
                 "customName": "Total database connections",
                 "defaultName": "Total database connections",
                 "chartConfig": {
+                    "legendShown": true,
                     "type": "TOP_LIST",
                     "series": [
                         {
                             "metric": "builtin:service.dbconnections.total",
                             "aggregation": "NONE",
-                            "percentile": null,
                             "type": "LINE",
                             "entityType": "SERVICE",
-                            "dimensions": [],
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
                             "sortAscending": false,
                             "sortColumn": true,
                             "aggregationRate": "TOTAL"
@@ -344,10 +333,7 @@
                 "width": 608,
                 "height": 38
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            }
+            "tileFilter": {}
         },
         {
             "name": "Custom chart",
@@ -359,24 +345,28 @@
                 "width": 304,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
                 "customName": "Average failure rate - 5xx",
                 "defaultName": "Average failure rate - 5xx",
                 "chartConfig": {
+                    "legendShown": true,
                     "type": "SINGLE_VALUE",
                     "series": [
                         {
                             "metric": "builtin:service.errors.fivexx.rate",
                             "aggregation": "AVG",
-                            "percentile": null,
                             "type": "LINE",
                             "entityType": "SERVICE",
-                            "dimensions": [],
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
                             "sortAscending": false,
                             "sortColumn": true,
                             "aggregationRate": "TOTAL"
@@ -397,24 +387,28 @@
                 "width": 304,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
                 "customName": "HTTP 5xx count",
                 "defaultName": "HTTP 5xx count",
                 "chartConfig": {
+                    "legendShown": true,
                     "type": "SINGLE_VALUE",
                     "series": [
                         {
                             "metric": "builtin:service.errors.fivexx.count",
                             "aggregation": "NONE",
-                            "percentile": null,
                             "type": "LINE",
                             "entityType": "SERVICE",
-                            "dimensions": [],
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
                             "sortAscending": false,
                             "sortColumn": true,
                             "aggregationRate": "TOTAL"
@@ -435,24 +429,28 @@
                 "width": 608,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
                 "customName": "Top called services",
                 "defaultName": "Top called services",
                 "chartConfig": {
+                    "legendShown": true,
                     "type": "TOP_LIST",
                     "series": [
                         {
                             "metric": "builtin:service.requestCount.total",
                             "aggregation": "NONE",
-                            "percentile": null,
                             "type": "LINE",
                             "entityType": "SERVICE",
-                            "dimensions": [],
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
                             "sortAscending": false,
                             "sortColumn": true,
                             "aggregationRate": "TOTAL"
@@ -473,24 +471,28 @@
                 "width": 304,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
                 "customName": "Average failed connections",
                 "defaultName": "Average failed connections",
                 "chartConfig": {
+                    "legendShown": true,
                     "type": "SINGLE_VALUE",
                     "series": [
                         {
                             "metric": "builtin:service.dbconnections.failureRate",
                             "aggregation": "AVG",
-                            "percentile": null,
                             "type": "LINE",
                             "entityType": "SERVICE",
-                            "dimensions": [],
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
                             "sortAscending": false,
                             "sortColumn": true,
                             "aggregationRate": "TOTAL"
@@ -511,24 +513,28 @@
                 "width": 304,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
                 "customName": "Total connections",
                 "defaultName": "Total connections",
                 "chartConfig": {
+                    "legendShown": true,
                     "type": "SINGLE_VALUE",
                     "series": [
                         {
                             "metric": "builtin:service.dbconnections.total",
                             "aggregation": "NONE",
-                            "percentile": null,
                             "type": "LINE",
                             "entityType": "SERVICE",
-                            "dimensions": [],
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
                             "sortAscending": false,
                             "sortColumn": true,
                             "aggregationRate": "TOTAL"
@@ -549,10 +555,7 @@
                 "width": 304,
                 "height": 152
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            }
+            "tileFilter": {}
         }
     ]
 }

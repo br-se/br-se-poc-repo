@@ -35,11 +35,7 @@
                 "width": 456,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
-            "filterConfig": null,
+            "tileFilter": {},
             "chartVisible": true
         },
         {
@@ -52,11 +48,7 @@
                 "width": 380,
                 "height": 608
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
-            "filterConfig": null,
+            "tileFilter": {},
             "chartVisible": true
         },
         {
@@ -69,11 +61,7 @@
                 "width": 456,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
-            "filterConfig": null,
+            "tileFilter": {},
             "chartVisible": true
         },
         {
@@ -86,11 +74,7 @@
                 "width": 456,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
-            "filterConfig": null,
+            "tileFilter": {},
             "chartVisible": true
         },
         {
@@ -103,11 +87,7 @@
                 "width": 456,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
-            "filterConfig": null,
+            "tileFilter": {},
             "chartVisible": true
         },
         {
@@ -120,10 +100,7 @@
                 "width": 152,
                 "height": 152
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            }
+            "tileFilter": {}
         },
         {
             "name": "Smartscape",
@@ -135,10 +112,7 @@
                 "width": 304,
                 "height": 152
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            }
+            "tileFilter": {}
         },
         {
             "name": "Docker",
@@ -150,10 +124,7 @@
                 "width": 304,
                 "height": 152
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            }
+            "tileFilter": {}
         },
         {
             "name": "VMware",
@@ -165,10 +136,7 @@
                 "width": 304,
                 "height": 152
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "assignedEntities": []
         },
         {
@@ -181,27 +149,31 @@
                 "width": 304,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
                 "customName": "Failure Rate - 5xx",
                 "defaultName": "Custom chart",
                 "chartConfig": {
+                    "legendShown": true,
                     "type": "SINGLE_VALUE",
                     "series": [
                         {
                             "metric": "builtin:service.errors.fivexx.rate",
                             "aggregation": "AVG",
-                            "percentile": null,
                             "type": "LINE",
                             "entityType": "SERVICE",
-                            "dimensions": [],
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
                             "sortAscending": false,
-                            "aggregationRate": "TOTAL",
-                            "sortColumn": true
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
                         }
                     ],
                     "resultMetadata": {}
@@ -219,27 +191,31 @@
                 "width": 304,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
                 "customName": "CPU consumption by service",
                 "defaultName": "Custom chart",
                 "chartConfig": {
+                    "legendShown": true,
                     "type": "TOP_LIST",
                     "series": [
                         {
                             "metric": "builtin:service.cpu.perRequest",
                             "aggregation": "AVG",
-                            "percentile": null,
                             "type": "LINE",
                             "entityType": "SERVICE",
-                            "dimensions": [],
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
                             "sortAscending": false,
-                            "aggregationRate": "TOTAL",
-                            "sortColumn": true
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
                         }
                     ],
                     "resultMetadata": {}
@@ -257,27 +233,31 @@
                 "width": 304,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
                 "customName": "Response time by service",
                 "defaultName": "Custom chart",
                 "chartConfig": {
+                    "legendShown": true,
                     "type": "TOP_LIST",
                     "series": [
                         {
                             "metric": "builtin:service.response.time",
                             "aggregation": "AVG",
-                            "percentile": null,
                             "type": "LINE",
                             "entityType": "SERVICE",
-                            "dimensions": [],
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
                             "sortAscending": false,
-                            "aggregationRate": "TOTAL",
-                            "sortColumn": true
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
                         }
                     ],
                     "resultMetadata": {}
@@ -295,27 +275,31 @@
                 "width": 342,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
                 "customName": "Database connection failure",
                 "defaultName": "Custom chart",
                 "chartConfig": {
+                    "legendShown": true,
                     "type": "TOP_LIST",
                     "series": [
                         {
                             "metric": "builtin:service.dbconnections.failure",
                             "aggregation": "NONE",
-                            "percentile": null,
                             "type": "LINE",
                             "entityType": "SERVICE",
-                            "dimensions": [],
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
                             "sortAscending": false,
-                            "aggregationRate": "TOTAL",
-                            "sortColumn": true
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
                         }
                     ],
                     "resultMetadata": {}
@@ -333,38 +317,48 @@
                 "width": 342,
                 "height": 304
             },
-            "tileFilter": {
-                "timeframe": null,
-                "managementZone": null
-            },
+            "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
                 "customName": "Available CPU vs Available memory",
                 "defaultName": "Custom chart",
                 "chartConfig": {
+                    "legendShown": true,
                     "type": "TIMESERIES",
                     "series": [
                         {
                             "metric": "builtin:host.mem.avail.bytes",
                             "aggregation": "AVG",
-                            "percentile": null,
                             "type": "LINE",
                             "entityType": "HOST",
-                            "dimensions": [],
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.host",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
                             "sortAscending": false,
-                            "aggregationRate": "TOTAL",
-                            "sortColumn": true
+                            "sortColumn": false,
+                            "aggregationRate": "TOTAL"
                         },
                         {
                             "metric": "builtin:host.cpu.idle",
                             "aggregation": "AVG",
-                            "percentile": null,
                             "type": "LINE",
                             "entityType": "HOST",
-                            "dimensions": [],
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.host",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
                             "sortAscending": false,
-                            "aggregationRate": "TOTAL",
-                            "sortColumn": false
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
                         }
                     ],
                     "resultMetadata": {}
