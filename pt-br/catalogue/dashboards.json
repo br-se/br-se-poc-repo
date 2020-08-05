@@ -1,17 +1,27 @@
 [
     {
-        "filename": "ecoinfra.json"
+        "filename": "ecoinfra.json",
+        "description": "Infraestrutura também necessita ter uma visão ampla da saúde geral, porém com métricas específicas que lhes de um apoio em seu dia a dia.",
+        "type": "FIRST_DAY"
     },
     {
-        "filename": "centroops.json"
+        "filename": "centroops.json",
+        "description": "A operação, precisa de uma visão clara e ágil de onde os problemas estão ocorrendo e quais serviços estão sendo afetados.",
+        "type": "FIRST_DAY"
     },
     {
-        "filename": "negocios.json"
+        "filename": "negocios.json",
+        "description": "O time de Negócio, deve tomar decisões baseando-se na experiência de seus clientes.",
+        "type": "FIRST_DAY"
     },
     {
-        "filename": "quality.json"
+        "filename": "quality.json",
+        "description": "Para finalizar, o time de dev ou qualidade pode validar suas releases para não correrem risco quando forem para produção.",
+        "type": "FIRST_DAY"
     },
     {
-        "filename": "tatic.json"
+        "filename": "tatic.json",
+        "description": "Para o time de arquitetura, uma visão completa desde da percepção dos usuários como também da qualidade dos serviços e com possibilidades de descer o nível caso necessário.",
+        "type": "FIRST_DAY"
     }
 ]
