@@ -88,5 +88,5 @@
         "description": "Indicadores baseados na integração com a conta da AWS com a visão Geral dos principais Produtos",
         "type": "AWS",
         "prettyName" : "AWS Performance"
-    },
+    }
 ]
