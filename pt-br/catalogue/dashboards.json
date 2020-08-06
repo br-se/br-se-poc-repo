@@ -30,6 +30,12 @@
         "prettyName" : "Tático - Aplicações de Negócio"
     },
     {
+        "filename": "aws-master-v2.json",
+        "description": "Indicadores baseados na integração com a conta da AWS com a visão Geral dos principais Produtos",
+        "type": "AWS",
+        "prettyName" : "AWS Performance"
+    },
+    {
         "filename": "aws-granular-alb-v1.json",
         "description": "Indicadores baseados na integração com a conta da AWS com a visão de forma Granular do produto",
         "type": "AWS",
@@ -82,11 +88,5 @@
         "description": "Indicadores baseados na integração com a conta da AWS com a visão de forma Granular do produto",
         "type": "AWS",
         "prettyName" : "AWS SQS Granular"
-    },
-    {
-        "filename": "aws-master-v2.json",
-        "description": "Indicadores baseados na integração com a conta da AWS com a visão Geral dos principais Produtos",
-        "type": "AWS",
-        "prettyName" : "AWS Performance"
-    }
+    }    
 ]
