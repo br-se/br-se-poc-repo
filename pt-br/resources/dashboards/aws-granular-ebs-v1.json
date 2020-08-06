@@ -1,0 +1,383 @@
+{
+  "metadata": {
+    "configurationVersions": [
+      4,
+      2
+    ],
+    "clusterVersion": {
+      "major": 0,
+      "minor": 0,
+      "revision": 0,
+      "sourceRevision": "",
+      "timestamp": ""
+    }
+  },
+  "dashboardMetadata": {
+    "name": "☁ AWS - EBS - Granular",
+    "shared": true,
+    "sharingDetails": {
+      "linkShared": true,
+      "published": false
+    },
+    "dashboardFilter": {
+      "timeframe": "",
+      "managementZone": null
+	  
+	  
+	  
+    }
+  },
+    "tiles": [{
+        "name": "Volume Performance",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 0,
+            "width": 950,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1976,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "markdown": "##↩ [Voltar](https://boz56679.live.dynatrace.com/#dashboard;id=3fb09dec-879a-4f2b-91f7-7f01e9621e97;gtf=l_2_HOURS;gf=all)\n"
+    }, {
+        "name": "",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 0,
+            "width": 570,
+            "height": 380
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "EBS volume idle time %",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "PIE",
+                "series": [{
+                    "metric": "builtin:cloud.aws.ebs.idleTime",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "EBS",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.ebs_volume",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 570,
+            "width": 380,
+            "height": 380
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "EBS volume queue length",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:cloud.aws.ebs.queue",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "EBS",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.ebs_volume",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 456,
+            "left": 0,
+            "width": 494,
+            "height": 380
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "EBS volume read latency",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:cloud.aws.ebs.latency.read",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "EBS",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.ebs_volume",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 456,
+            "left": 494,
+            "width": 456,
+            "height": 380
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "EBS volume write latency",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:cloud.aws.ebs.latency.write",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "EBS",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.ebs_volume",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Latency - Read/Write",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 418,
+            "left": 0,
+            "width": 950,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 988,
+            "width": 494,
+            "height": 380
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "EBS volume consumed OPS",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:cloud.aws.ebs.ops.consumed",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "EBS",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.ebs_volume",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1482,
+            "width": 494,
+            "height": 380
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "EBS volume consumed OPS",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "builtin:cloud.aws.ebs.ops.consumed",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "EBS",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.ebs_volume",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "OPS",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 988,
+            "width": 988,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 456,
+            "left": 988,
+            "width": 494,
+            "height": 380
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "EBS volume read OPS",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:cloud.aws.ebs.ops.read",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "EBS",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.ebs_volume",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 456,
+            "left": 1482,
+            "width": 494,
+            "height": 380
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "EBS volume write OPS",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:cloud.aws.ebs.ops.write",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "EBS",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.ebs_volume",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "OPS - Read/Write",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 418,
+            "left": 988,
+            "width": 988,
+            "height": 38
+        },
+        "tileFilter": {}
+    }]
+}

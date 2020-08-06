@@ -1,0 +1,536 @@
+{
+  "metadata": {
+    "configurationVersions": [
+      4,
+      2
+    ],
+    "clusterVersion": {
+      "major": 0,
+      "minor": 0,
+      "revision": 0,
+      "sourceRevision": "",
+      "timestamp": ""
+    }
+  },
+  "dashboardMetadata": {
+    "name": "☁ AWS - API Gateway - Granular",
+    "shared": true,
+    "sharingDetails": {
+      "linkShared": true,
+      "published": false
+    },
+    "dashboardFilter": {
+      "timeframe": "",
+      "managementZone": null
+	  
+	  
+	  
+    }
+  },
+    "tiles": [{
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 0,
+            "width": 418,
+            "height": 228
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Count Sum",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "ext:cloud.aws.apiGateway.countSum",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1026,
+            "width": 494,
+            "height": 228
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "IntegrationLatency",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "ext:cloud.aws.apiGateway.integrationLatency",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 570,
+            "left": 1026,
+            "width": 494,
+            "height": 228
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Latency",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "ext:cloud.aws.apiGateway.latency",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1520,
+            "width": 684,
+            "height": 494
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "IntegrationLatency",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "ext:cloud.aws.apiGateway.integrationLatency",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.custom_device",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 418,
+            "width": 608,
+            "height": 494
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Count Sum",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "ext:cloud.aws.apiGateway.countSum",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.custom_device",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 570,
+            "left": 1520,
+            "width": 684,
+            "height": 494
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Latency",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "ext:cloud.aws.apiGateway.latency",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.custom_device",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Integration Latency ",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1026,
+            "width": 1178,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 2204,
+            "width": 304,
+            "height": 152
+        },
+        "tileFilter": {},
+        "markdown": "##↩ [Voltar](https://jce37063.live.dynatrace.com/#dashboard;gtf=l_2_HOURS;gf=all;id=6c164588-6574-4322-adec-74affab51c9e)\n"
+    }, {
+        "name": "Request Count per API",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 0,
+            "width": 1026,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 0,
+            "width": 418,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Count Sum",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "PIE",
+                "series": [{
+                    "metric": "ext:cloud.aws.apiGateway.countSum",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.custom_device",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 1026,
+            "width": 494,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "IntegrationLatency",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "PIE",
+                "series": [{
+                    "metric": "ext:cloud.aws.apiGateway.integrationLatency",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.custom_device",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Latency ",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 1026,
+            "width": 1178,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 798,
+            "left": 1026,
+            "width": 494,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Latency",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "PIE",
+                "series": [{
+                    "metric": "ext:cloud.aws.apiGateway.latency",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.custom_device",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 570,
+            "left": 0,
+            "width": 342,
+            "height": 494
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "4XXError Sum",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "ext:cloud.aws.apiGateway.4xxErrorSum",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [{
+                        "id": "0",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 570,
+            "left": 342,
+            "width": 342,
+            "height": 494
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "5XXError Sum",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "ext:cloud.aws.apiGateway.5xxErrorSum",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [{
+                        "id": "0",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 570,
+            "left": 684,
+            "width": 342,
+            "height": 494
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "CacheMissCount Sum",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "ext:cloud.aws.apiGateway.cacheMissCountSum",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.custom_device",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Error 4xx",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 0,
+            "width": 342,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "CacheMiss Count",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 684,
+            "width": 342,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Error 5xx",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 532,
+            "left": 342,
+            "width": 342,
+            "height": 38
+        },
+        "tileFilter": {}
+    }]
+}

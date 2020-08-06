@@ -1,0 +1,711 @@
+{
+  "metadata": {
+    "configurationVersions": [
+      4,
+      2
+    ],
+    "clusterVersion": {
+      "major": 0,
+      "minor": 0,
+      "revision": 0,
+      "sourceRevision": "",
+      "timestamp": ""
+    }
+  },
+  "dashboardMetadata": {
+    "name": "☁ AWS Performance",
+    "shared": true,
+    "sharingDetails": {
+      "linkShared": true,
+      "published": false
+    },
+    "dashboardFilter": {
+      "timeframe": "",
+      "managementZone": null
+	  
+	  
+	  
+    }
+  },
+     "tiles": [{
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 266,
+            "width": 532,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Integration Latency",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "PIE",
+                "series": [{
+                    "metric": "ext:cloud.aws.apiGateway.integrationLatency",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.custom_device",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "API Gateway",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 266,
+            "width": 532,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1862,
+            "width": 532,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "ALB number of consumed LCUs",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:cloud.aws.alb.lcus",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "ALB",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.aws_application_load_balancer",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "ALB",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1862,
+            "width": 532,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Dynamo DB",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 570,
+            "left": 266,
+            "width": 532,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 608,
+            "left": 266,
+            "width": 532,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "DynamoDB read capacity units %",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:cloud.aws.dynamo.capacityUnits.read",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "DYNAMO_DB",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.dynamo_db_table",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 874,
+            "left": 266,
+            "width": 532,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "DynamoDB write capacity units %",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:cloud.aws.dynamo.capacityUnits.write",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "DYNAMO_DB",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.dynamo_db_table",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Lambda",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 798,
+            "width": 532,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "RDS",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 1330,
+            "width": 532,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 798,
+            "width": 532,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "LambdaFunction number of failed invocations with HTTP 4XX status code",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "PIE",
+                "series": [{
+                    "metric": "builtin:cloud.aws.lambda.errors",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "AWS_LAMBDA_FUNCTION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.aws_lambda_function",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 798,
+            "width": 532,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "LambdaFunction throttled function invocation count",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:cloud.aws.lambda.throttlers",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "AWS_LAMBDA_FUNCTION",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.aws_lambda_function",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 570,
+            "left": 1330,
+            "width": 532,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "RDS CPU usage %",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:cloud.aws.rds.cpu.usage",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "RDS",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.relational_database_service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1330,
+            "width": 532,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "RDS freeable memory",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:cloud.aws.rds.memory.freeable",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "RDS",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.relational_database_service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 1330,
+            "width": 532,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "RDS read latency",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:cloud.aws.rds.latency.read",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "RDS",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.relational_database_service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 836,
+            "left": 1330,
+            "width": 532,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "RDS freeable memory",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:cloud.aws.rds.memory.freeable",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "RDS",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.relational_database_service",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 874,
+            "left": 798,
+            "width": 532,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "EBS - Write Latency",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:cloud.aws.ebs.latency.write",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "EBS",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.ebs_volume",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 608,
+            "left": 798,
+            "width": 532,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "EBS - Read Latency",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:cloud.aws.ebs.latency.read",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "EBS",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.ebs_volume",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "EBS",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 570,
+            "left": 798,
+            "width": 532,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Markdown",
+        "tileType": "MARKDOWN",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 0,
+            "width": 266,
+            "height": 228
+        },
+        "tileFilter": {},
+        "markdown": "##->[DYNAMO DB](https://jce37063.live.dynatrace.com/#dashboard;gtf=l_2_HOURS;gf=all;id=54a96d2a-a077-4a8b-901e-75c8db0515a1)\n##->[EBS](https://jce37063.live.dynatrace.com/#dashboard;gtf=l_2_HOURS;gf=all;id=3cbada94-00f8-4f27-9527-6c88cde58fed)\n##->[ALB](https://jce37063.live.dynatrace.com/#dashboard;gtf=l_2_HOURS;gf=all;id=85aeb110-934f-4deb-84bc-e61cdca3dff2)\n##->[Lambda](https://jce37063.live.dynatrace.com/#dashboard;gtf=l_2_HOURS;gf=all;id=4f367b18-8645-4be1-b686-f4862923dcf7)\n##->[RDS](https://jce37063.live.dynatrace.com/#dashboard;gtf=l_2_HOURS;gf=all;id=58394bf9-8684-4a42-8945-624f620cd3dd)"
+    }, {
+        "name": "MENU",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 0,
+            "width": 266,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 1862,
+            "width": 532,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "ALB number of client TLS negotiation errors",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:cloud.aws.alb.errors.tlsNeg",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "ALB",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.aws_application_load_balancer",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 570,
+            "left": 1862,
+            "width": 532,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "ALB number of active connections",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:cloud.aws.alb.connections.active",
+                    "aggregation": "AVG",
+                    "type": "AREA",
+                    "entityType": "ALB",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.aws_application_load_balancer",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 836,
+            "left": 1862,
+            "width": 532,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "ALB number of rejected connections",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "builtin:cloud.aws.alb.errors.rejCon",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "ALB",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.aws_application_load_balancer",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 266,
+            "width": 532,
+            "height": 266
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Api Gateway - Error 4xx ",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "PIE",
+                "series": [{
+                    "metric": "ext:cloud.aws.apiGateway.4xxErrorSum",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [{
+                        "id": "0",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }]
+}
