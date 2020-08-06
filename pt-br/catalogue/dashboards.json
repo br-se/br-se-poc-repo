@@ -28,5 +28,65 @@
         "description": "Para o time de arquitetura, uma visão completa desde da percepção dos usuários como também da qualidade dos serviços e com possibilidades de descer o nível caso necessário.",
         "type": "FIRST_DAY",
         "prettyName" : "Tático - Aplicações de Negócio"
-    }
+    },
+    {
+        "filename": "aws-granular-alb-v1.json",
+        "description": "Indicadores baseados na integração com a conta da AWS com a visão de forma Granular do produto",
+        "type": "AWS",
+        "prettyName" : "AWS ALB Granular"
+    },
+    {
+        "filename": "aws-granular-apigateway-v1.json",
+        "description": "Indicadores baseados na integração com a conta da AWS com a visão de forma Granular do produto",
+        "type": "AWS",
+        "prettyName" : "AWS Api Gateway Granular"
+    },
+    {
+        "filename": "aws-granular-dynamodb-v1.json",
+        "description": "Indicadores baseados na integração com a conta da AWS com a visão de forma Granular do produto",
+        "type": "AWS",
+        "prettyName" : "AWS DynamoDB Granular"
+    },
+    {
+        "filename": "aws-granular-ebs-v1.json",
+        "description": "Indicadores baseados na integração com a conta da AWS com a visão de forma Granular do produto",
+        "type": "AWS",
+        "prettyName" : "AWS EBS Granular"
+    },
+    {
+        "filename": "aws-granular-lambda-v1.json",
+        "description": "Indicadores baseados na integração com a conta da AWS com a visão de forma Granular do produto",
+        "type": "AWS",
+        "prettyName" : "AWS Lambda Granular"
+    },
+    {
+        "filename": "aws-granular-nlb-v1.json",
+        "description": "Indicadores baseados na integração com a conta da AWS com a visão de forma Granular do produto",
+        "type": "AWS",
+        "prettyName" : "AWS NLB Granular"
+    },
+    {
+        "filename": "aws-granular-rds-v1.json",
+        "description": "Indicadores baseados na integração com a conta da AWS com a visão de forma Granular do produto",
+        "type": "AWS",
+        "prettyName" : "AWS RDS Granular"
+    },
+    {
+        "filename": "aws-granular-s3-v1.json",
+        "description": "Indicadores baseados na integração com a conta da AWS com a visão de forma Granular do produto",
+        "type": "AWS",
+        "prettyName" : "AWS S3 Granular"
+    },
+    {
+        "filename": "aws-granular-sqs-v1.json",
+        "description": "Indicadores baseados na integração com a conta da AWS com a visão de forma Granular do produto",
+        "type": "AWS",
+        "prettyName" : "AWS SQS Granular"
+    },
+    {
+        "filename": "aws-master-v2.json",
+        "description": "Indicadores baseados na integração com a conta da AWS com a visão Geral dos principais Produtos",
+        "type": "AWS",
+        "prettyName" : "AWS Performance"
+    },
 ]
