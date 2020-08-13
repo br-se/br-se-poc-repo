@@ -19,7 +19,7 @@
     },
     {
         "filename": "quality.json",
-        "description": "Para finalizar, o time de dev ou qualidade pode validar suas releases para não correrem risco quando forem para produção.",
+        "description": "O time de dev ou qualidade pode validar suas releases para não correrem risco quando forem para produção.",
         "type": "FIRST_DAY",
         "prettyName" : "Assessment de Qualidade"
     },
