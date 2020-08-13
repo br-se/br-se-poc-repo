@@ -1,0 +1,1026 @@
+{
+    "metadata": {
+        "configurationVersions": [
+            4,
+            2
+        ],
+        "clusterVersion": {
+            "major": 0,
+            "minor": 0,
+            "revision": 0,
+            "sourceRevision": "",
+            "timestamp": ""
+        }
+    },
+    "dashboardMetadata": {
+        "name": "☁ AWS - RDS",
+        "shared": true,
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        },
+        "dashboardFilter": {
+            "timeframe": "",
+            "managementZone": null
+        }
+    },
+    "tiles": [
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 1444,
+                "width": 304,
+                "height": 228
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "RDS connections",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.rds.connections",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "RDS",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "RDS Performance",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 1444,
+                "width": 760,
+                "height": 38
+            },
+            "tileFilter": {}
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 1748,
+                "width": 456,
+                "height": 228
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "RDS connections",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.rds.connections",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "RDS",
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.relational_database_service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 266,
+                "left": 1444,
+                "width": 304,
+                "height": 228
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "RDS free storage space %",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.rds.free",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "RDS",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 266,
+                "left": 1748,
+                "width": 456,
+                "height": 228
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "RDS free storage space %",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.rds.free",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "RDS",
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.relational_database_service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 494,
+                "left": 1444,
+                "width": 304,
+                "height": 266
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "RDS CPU usage %",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.rds.cpu.usage",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "RDS",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 494,
+                "left": 1748,
+                "width": 456,
+                "height": 266
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "RDS CPU usage %",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.rds.cpu.usage",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "RDS",
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.relational_database_service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "RDS Latency",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 0,
+                "width": 722,
+                "height": 38
+            },
+            "tileFilter": {}
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 0,
+                "width": 304,
+                "height": 228
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "RDS read latency",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.rds.latency.read",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "RDS",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 304,
+                "width": 418,
+                "height": 228
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "RDS read latency",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.rds.latency.read",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "RDS",
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.relational_database_service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 266,
+                "left": 0,
+                "width": 304,
+                "height": 266
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "RDS write latency",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.rds.latency.write",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "RDS",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 266,
+                "left": 304,
+                "width": 418,
+                "height": 266
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "RDS write latency",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.rds.latency.write",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "RDS",
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.relational_database_service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "RDS IOPS",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 532,
+                "left": 0,
+                "width": 722,
+                "height": 38
+            },
+            "tileFilter": {}
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 570,
+                "left": 0,
+                "width": 304,
+                "height": 266
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "RDS read IOPS",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.rds.ops.read",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "RDS",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 570,
+                "left": 304,
+                "width": 418,
+                "height": 266
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "RDS read IOPS",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.rds.ops.read",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "RDS",
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.relational_database_service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 836,
+                "left": 304,
+                "width": 418,
+                "height": 228
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "RDS write IOPS",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.rds.ops.write",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "RDS",
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.relational_database_service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 836,
+                "left": 0,
+                "width": 304,
+                "height": 228
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "RDS write IOPS",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.rds.ops.write",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "RDS",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 760,
+                "left": 1444,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "RDS freeable memory",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.rds.memory.freeable",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "RDS",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 760,
+                "left": 1748,
+                "width": 456,
+                "height": 304
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "RDS freeable memory",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.rds.memory.freeable",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "RDS",
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.relational_database_service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 722,
+                "width": 304,
+                "height": 228
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "RDS read throughput",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.rds.throughput.read",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "RDS",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "RDS Read and Write Throughput",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 722,
+                "width": 722,
+                "height": 38
+            },
+            "tileFilter": {}
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 1026,
+                "width": 418,
+                "height": 228
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "RDS read throughput",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.rds.throughput.read",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "RDS",
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.relational_database_service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 266,
+                "left": 722,
+                "width": 304,
+                "height": 266
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "RDS write throughput",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.rds.throughput.write",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "RDS",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 266,
+                "left": 1026,
+                "width": 418,
+                "height": 266
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "RDS write throughput",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.rds.throughput.write",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "RDS",
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.relational_database_service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "RDS Sent and Transmitted Throughput",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 532,
+                "left": 722,
+                "width": 722,
+                "height": 38
+            },
+            "tileFilter": {}
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 570,
+                "left": 722,
+                "width": 304,
+                "height": 266
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "RDS network received throughput",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.rds.net.rx",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "RDS",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 570,
+                "left": 1026,
+                "width": 418,
+                "height": 266
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "RDS network received throughput",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.rds.net.rx",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "RDS",
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.relational_database_service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 836,
+                "left": 722,
+                "width": 304,
+                "height": 228
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "RDS network transmitted throughput",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.rds.net.tx",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "RDS",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 836,
+                "left": 1026,
+                "width": 418,
+                "height": 228
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "RDS network transmitted throughput",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.rds.net.tx",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "RDS",
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.relational_database_service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Markdown",
+            "tileType": "MARKDOWN",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 2204,
+                "width": 304,
+                "height": 152
+            },
+            "tileFilter": {},
+            "markdown": "##↩ [Back](https://jce37063.live.dynatrace.com/#dashboard/dashboard;id=6c164588-6574-4322-adec-74affab51c9e)\n"
+        }
+    ]
+}

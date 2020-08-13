@@ -1,0 +1,736 @@
+{
+    "metadata": {
+        "configurationVersions": [
+            4,
+            2
+        ],
+        "clusterVersion": {
+            "major": 0,
+            "minor": 0,
+            "revision": 0,
+            "sourceRevision": "",
+            "timestamp": ""
+        }
+    },
+    "dashboardMetadata": {
+        "name": "☁ AWS - NLB",
+        "shared": true,
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        },
+        "dashboardFilter": {
+            "timeframe": "",
+            "managementZone": null
+        }
+    },
+    "tiles": [
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 0,
+                "width": 380,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "NLB number of consumed LCUs",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "SINGLE_VALUE",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.nlb.lcus",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "NLB",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 380,
+                "width": 608,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "NLB number of consumed LCUs",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.nlb.lcus",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "NLB",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 342,
+                "left": 0,
+                "width": 380,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "NLB number of processed bytes",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "SINGLE_VALUE",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.nlb.bytes",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "NLB",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 342,
+                "left": 380,
+                "width": 608,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "NLB number of processed bytes",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.nlb.bytes",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "NLB",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Processed and Consumed",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 0,
+                "width": 988,
+                "height": 38
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 988,
+                "width": 418,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "NLB number of active flows",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.nlb.flow.active",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "NLB",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 1406,
+                "width": 570,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "NLB number of active flows",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.nlb.flow.active",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "NLB",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Flows",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 988,
+                "width": 988,
+                "height": 38
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 342,
+                "left": 988,
+                "width": 418,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "NLB number of new flows",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.nlb.flow.new",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "NLB",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 342,
+                "left": 1406,
+                "width": 570,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "NLB number of new flows",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.nlb.flow.new",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "NLB",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 1292,
+                "left": 0,
+                "width": 722,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "NLB number of client resets",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "PIE",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.nlb.tcp.reset.client",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "NLB",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 1292,
+                "left": 1368,
+                "width": 608,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "NLB number of client resets",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.nlb.tcp.reset.client",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "NLB",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Resets",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 646,
+                "left": 0,
+                "width": 1976,
+                "height": 38
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 684,
+                "left": 0,
+                "width": 722,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "NLB number of resets",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "PIE",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.nlb.tcp.reset.elb",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "NLB",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 988,
+                "left": 0,
+                "width": 722,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "NLB number of target resets",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "PIE",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.nlb.tcp.reset.target",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "NLB",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 988,
+                "left": 722,
+                "width": 646,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "NLB number of target resets",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.nlb.tcp.reset.target",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "NLB",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 1292,
+                "left": 722,
+                "width": 646,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "NLB number of client resets",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.nlb.tcp.reset.client",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "NLB",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 988,
+                "left": 1368,
+                "width": 608,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "NLB number of target resets",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.nlb.tcp.reset.target",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "NLB",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 684,
+                "left": 722,
+                "width": 646,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "NLB number of resets",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.nlb.tcp.reset.elb",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "NLB",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 684,
+                "left": 1368,
+                "width": 608,
+                "height": 304
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "NLB number of resets",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.nlb.tcp.reset.elb",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "NLB",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Markdown",
+            "tileType": "MARKDOWN",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 1976,
+                "width": 304,
+                "height": 152
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "markdown": "##↩ [Back](https://boz56679.live.dynatrace.com/#dashboard;id=59dad613-0fcc-46c1-af1d-a6f087a42378;gtf=l_2_HOURS;gf=all)\n"
+        }
+    ]
+}

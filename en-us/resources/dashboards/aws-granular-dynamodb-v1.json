@@ -1,0 +1,422 @@
+{
+    "metadata": {
+        "configurationVersions": [
+            4,
+            2
+        ],
+        "clusterVersion": {
+            "major": 0,
+            "minor": 0,
+            "revision": 0,
+            "sourceRevision": "",
+            "timestamp": ""
+        }
+    },
+    "dashboardMetadata": {
+        "name": "☁ AWS - DynamoDB",
+        "shared": true,
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        },
+        "dashboardFilter": {
+            "timeframe": "",
+            "managementZone": null
+        }
+    },
+    "tiles": [
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 0,
+                "width": 532,
+                "height": 266
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Number of tables for AvailabilityZone",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "PIE",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.dynamo.tables",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "AWS_CREDENTIALS",
+                            "dimensions": [
+                                {
+                                    "id": "1",
+                                    "name": "AWS Availability Zone",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 570,
+                "width": 304,
+                "height": 266
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "DynamoDB read capacity units %",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.dynamo.capacityUnits.read",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "DYNAMO_DB",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 874,
+                "width": 456,
+                "height": 266
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "DynamoDB read capacity units %",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.dynamo.capacityUnits.read",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "DYNAMO_DB",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 266,
+                "left": 570,
+                "width": 304,
+                "height": 266
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "DynamoDB write capacity units %",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.dynamo.capacityUnits.write",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "DYNAMO_DB",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 266,
+                "left": 874,
+                "width": 456,
+                "height": 266
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "DynamoDB write capacity units %",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.dynamo.capacityUnits.write",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "DYNAMO_DB",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 532,
+                "left": 570,
+                "width": 304,
+                "height": 266
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "DynamoDB number of items returned by operation",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.dynamo.requests.returnedItems",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "DYNAMO_DB",
+                            "dimensions": [
+                                {
+                                    "id": "1",
+                                    "name": "Operation",
+                                    "values": [],
+                                    "entityDimension": false
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 532,
+                "left": 874,
+                "width": 456,
+                "height": 266
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "DynamoDB number of items returned by operation",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.dynamo.requests.returnedItems",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "DYNAMO_DB",
+                            "dimensions": [
+                                {
+                                    "id": "1",
+                                    "name": "Operation",
+                                    "values": [],
+                                    "entityDimension": false
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 798,
+                "left": 570,
+                "width": 304,
+                "height": 266
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "DynamoDB number of successful request latency for operation",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TIMESERIES",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.dynamo.requests.latency",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "DYNAMO_DB",
+                            "dimensions": [
+                                {
+                                    "id": "1",
+                                    "name": "Operation",
+                                    "values": [],
+                                    "entityDimension": false
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 798,
+                "left": 874,
+                "width": 456,
+                "height": 266
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "DynamoDB number of successful request latency for operation",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:cloud.aws.dynamo.requests.latency",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "DYNAMO_DB",
+                            "dimensions": [
+                                {
+                                    "id": "1",
+                                    "name": "Operation",
+                                    "values": [],
+                                    "entityDimension": false
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Markdown",
+            "tileType": "MARKDOWN",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 1368,
+                "width": 304,
+                "height": 152
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "markdown": "##↩ [Back](https://boz56679.live.dynatrace.com/#dashboard;id=59dad613-0fcc-46c1-af1d-a6f087a42378;gtf=l_2_HOURS;gf=all)\n"
+        }
+    ]
+}

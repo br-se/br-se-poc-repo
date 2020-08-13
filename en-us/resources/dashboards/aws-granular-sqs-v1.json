@@ -1,0 +1,531 @@
+{
+    "metadata": {
+        "configurationVersions": [
+            4,
+            2
+        ],
+        "clusterVersion": {
+            "major": 0,
+            "minor": 0,
+            "revision": 0,
+            "sourceRevision": "",
+            "timestamp": ""
+        }
+    },
+    "dashboardMetadata": {
+        "name": "☁ AWS - SQS",
+        "shared": true,
+        "sharingDetails": {
+            "linkShared": true,
+            "published": false
+        },
+        "dashboardFilter": {
+            "timeframe": "",
+            "managementZone": null
+        }
+    },
+    "tiles": [
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 418,
+                "width": 532,
+                "height": 380
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "ApproximateAgeOfOldestMessage",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "ext:cloud.aws.sqs.approximateAgeOfOldestMessage",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "IOT",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 798,
+                "left": 988,
+                "width": 418,
+                "height": 380
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "ApproximateNumberOfMessagesNotVisible Sum",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "SINGLE_VALUE",
+                    "series": [
+                        {
+                            "metric": "ext:cloud.aws.sqs.approximateNumberOfMessagesNotVisibleSum",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "IOT",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 798,
+                "left": 1406,
+                "width": 532,
+                "height": 380
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "ApproximateNumberOfMessagesNotVisible Sum",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "ext:cloud.aws.sqs.approximateNumberOfMessagesNotVisibleSum",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "IOT",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 418,
+                "left": 1406,
+                "width": 532,
+                "height": 380
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "ApproximateNumberOfMessagesVisible Sum",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "ext:cloud.aws.sqs.approximateNumberOfMessagesVisibleSum",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "IOT",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 418,
+                "left": 988,
+                "width": 418,
+                "height": 380
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "ApproximateNumberOfMessagesVisible Sum",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "SINGLE_VALUE",
+                    "series": [
+                        {
+                            "metric": "ext:cloud.aws.sqs.approximateNumberOfMessagesVisibleSum",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "IOT",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 0,
+                "width": 418,
+                "height": 380
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "ApproximateAgeOfOldestMessage",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "SINGLE_VALUE",
+                    "series": [
+                        {
+                            "metric": "ext:cloud.aws.sqs.approximateAgeOfOldestMessage",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "IOT",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 988,
+                "width": 418,
+                "height": 380
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "ApproximateNumberOfMessagesVisible",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "SINGLE_VALUE",
+                    "series": [
+                        {
+                            "metric": "ext:cloud.aws.sqs.approximateNumberOfMessagesVisible",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "IOT",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 1406,
+                "width": 532,
+                "height": 380
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "ApproximateNumberOfMessagesVisible",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "ext:cloud.aws.sqs.approximateNumberOfMessagesVisible",
+                            "aggregation": "AVG",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "IOT",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 418,
+                "left": 0,
+                "width": 418,
+                "height": 380
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "NumberOfMessagesReceived Sum",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "SINGLE_VALUE",
+                    "series": [
+                        {
+                            "metric": "ext:cloud.aws.sqs.numberOfMessagesReceivedSum",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "IOT",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 798,
+                "left": 0,
+                "width": 418,
+                "height": 380
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "NumberOfMessagesSent Sum",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "SINGLE_VALUE",
+                    "series": [
+                        {
+                            "metric": "ext:cloud.aws.sqs.numberOfMessagesSentSum",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "IOT",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 418,
+                "left": 418,
+                "width": 532,
+                "height": 380
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "NumberOfMessagesReceived Sum",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "ext:cloud.aws.sqs.numberOfMessagesReceivedSum",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "IOT",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 798,
+                "left": 418,
+                "width": 532,
+                "height": 380
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "NumberOfMessagesSent Sum",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "ext:cloud.aws.sqs.numberOfMessagesSentSum",
+                            "aggregation": "NONE",
+                            "percentile": null,
+                            "type": "LINE",
+                            "entityType": "IOT",
+                            "dimensions": [],
+                            "sortAscending": false,
+                            "aggregationRate": "TOTAL",
+                            "sortColumn": true
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {}
+            }
+        },
+        {
+            "name": "Messages Performance",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 0,
+                "width": 950,
+                "height": 38
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Messages Visibles",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 988,
+                "width": 950,
+                "height": 38
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            }
+        },
+        {
+            "name": "Markdown",
+            "tileType": "MARKDOWN",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 1938,
+                "width": 304,
+                "height": 152
+            },
+            "tileFilter": {
+                "timeframe": null,
+                "managementZone": null
+            },
+            "markdown": "##↩ [Back](https://boz56679.live.dynatrace.com/#dashboard;id=59dad613-0fcc-46c1-af1d-a6f087a42378;gtf=l_2_HOURS;gf=all)\n"
+        }
+    ]
+}
