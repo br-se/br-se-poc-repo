@@ -1,17 +1,92 @@
 [
     {
-        "filename": "ecoinfra.json"
+        "filename": "ecoinfra.json",
+        "description": "Infrastructure also needs to have a full view of systems health, but with specific metrics that support them.",
+        "type": "FIRST_DAY",
+        "prettyName": "Ecosystem and infrastructure"
     },
     {
-        "filename": "centroops.json"
+        "filename": "centroops.json",
+        "description": "The operation needs a clear view of where the problems are happening and which services are affected.",
+        "type": "FIRST_DAY",
+        "prettyName": "Operations Center"
     },
     {
-        "filename": "negocios.json"
+        "filename": "negocios.json",
+        "description": "The business team must take decisions based on customer experience.",
+        "type": "FIRST_DAY",
+        "prettyName": "Business Journey"
     },
     {
-        "filename": "quality.json"
+        "filename": "quality.json",
+        "description": "The dev or quality team can validate their releases to reduce risk when deploying to production. ",
+        "type": "FIRST_DAY",
+        "prettyName": "Quality assessmment"
     },
     {
-        "filename": "tatic.json"
+        "filename": "tatic.json",
+        "description": "For the application architecture team, a full view from the user experience and also services.",
+        "type": "FIRST_DAY",
+        "prettyName": "Tactic - Business applications"
+    },
+    {
+        "filename": "aws-master-v2.json",
+        "description": "General overview of metrics based on AWS integration",
+        "type": "AWS",
+        "prettyName": "AWS Performance"
+    },
+    {
+        "filename": "aws-granular-alb-v1.json",
+        "description": "Details of AWS services",
+        "type": "AWS",
+        "prettyName": "AWS ALB"
+    },
+    {
+        "filename": "aws-granular-apigateway-v1.json",
+        "description": "Details of AWS services",
+        "type": "AWS",
+        "prettyName": "AWS API Gateway"
+    },
+    {
+        "filename": "aws-granular-dynamodb-v1.json",
+        "description": "Details of AWS services",
+        "type": "AWS",
+        "prettyName": "AWS DynamoDB"
+    },
+    {
+        "filename": "aws-granular-ebs-v1.json",
+        "description": "Details of AWS services",
+        "type": "AWS",
+        "prettyName": "AWS EBS"
+    },
+    {
+        "filename": "aws-granular-lambda-v1.json",
+        "description": "Details of AWS services",
+        "type": "AWS",
+        "prettyName": "AWS Lambda"
+    },
+    {
+        "filename": "aws-granular-nlb-v1.json",
+        "description": "Details of AWS services",
+        "type": "AWS",
+        "prettyName": "AWS NLB"
+    },
+    {
+        "filename": "aws-granular-rds-v1.json",
+        "description": "Details of AWS services",
+        "type": "AWS",
+        "prettyName": "AWS RDS"
+    },
+    {
+        "filename": "aws-granular-s3-v1.json",
+        "description": "Details of AWS services",
+        "type": "AWS",
+        "prettyName": "AWS S3"
+    },
+    {
+        "filename": "aws-granular-sqs-v1.json",
+        "description": "Details of AWS services",
+        "type": "AWS",
+        "prettyName": "AWS SQS"
     }
 ]
