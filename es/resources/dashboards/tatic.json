@@ -13,7 +13,7 @@
         }
     },
     "dashboardMetadata": {
-        "name": "Tático - Aplicações de Negócio",
+        "name": "Aplicaciones de Negócio",
         "shared": true,
         "sharingDetails": {
             "linkShared": true,
@@ -38,7 +38,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "Indice de Satisfação - Apdex - 1 = :) ",
+                "customName": "Indice de Satisfacción - Apdex - 1 = :) ",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,
@@ -80,7 +80,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "Tempo Médio das ações dos usuários",
+                "customName": "Tiempo Promedio de las acciones de los usuarios",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,
@@ -115,7 +115,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "Tempo Médio carregamento de páginas",
+                "customName": "Tiempo Promedio de carga de las páginas",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,
@@ -150,7 +150,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "Usuários ativos (estimado)",
+                "customName": "Usuarios activos (estimado)",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,
@@ -300,7 +300,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "Pirores tempos de resposta - Server side",
+                "customName": "Peores tiempos de respuesta - Server side",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,
@@ -342,7 +342,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "Throughput de serviços",
+                "customName": "Throughput de servicios",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,
@@ -372,7 +372,7 @@
             }
         },
         {
-            "name": "Perspectiva cliente",
+            "name": "Perspectiva del cliente",
             "tileType": "HEADER",
             "configured": true,
             "bounds": {
@@ -384,7 +384,7 @@
             "tileFilter": {}
         },
         {
-            "name": "Perspectiva servidor",
+            "name": "Perspectiva del servidor",
             "tileType": "HEADER",
             "configured": true,
             "bounds": {
@@ -406,7 +406,7 @@
                 "height": 304
             },
             "tileFilter": {},
-            "customName": "Usabilidade - qtd rage clicks po sessão",
+            "customName": "Usabilidad - rage clics por sessione",
             "query": "select count (numberOfRageClicks) from usersession",
             "type": "SINGLE_VALUE"
         },
@@ -421,7 +421,7 @@
                 "height": 152
             },
             "tileFilter": {},
-            "markdown": "## Diagnostic Tools\n\n[Análise de Requsições](#topglobalwebrequests;gtf=l_2_HOURS;gf=all)\n\n[Análise de Exceptions](#exceptionsoverview;gtf=l_2_HOURS;gf=all)\n\n[Análise de Queries](#topdbstatements;gtf=l_2_HOURS;gf=all)"
+            "markdown": "## Diagnostic Tools\n\n[Análisis de solicitudes](#topglobalwebrequests;gtf=l_2_HOURS;gf=all)\n\n[Análisis de Excepciones](#exceptionsoverview;gtf=l_2_HOURS;gf=all)\n\n[Análisis de Consultas](#topdbstatements;gtf=l_2_HOURS;gf=all)"
         }
     ]
 }

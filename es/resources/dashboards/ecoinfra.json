@@ -13,7 +13,7 @@
         }
     },
     "dashboardMetadata": {
-        "name": "Ecossistemas e Infraestrutura",
+        "name": "Ecosistemas e infraestructura",
         "shared": true,
         "sharingDetails": {
             "linkShared": true,
@@ -166,7 +166,7 @@
             }
         },
         {
-            "name": "Rede",
+            "name": "Red",
             "tileType": "HEADER",
             "configured": true,
             "bounds": {
@@ -178,7 +178,7 @@
             "tileFilter": {}
         },
         {
-            "name": "Serviços",
+            "name": "Servicios",
             "tileType": "HEADER",
             "configured": true,
             "bounds": {
@@ -202,7 +202,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "Média de consumo CPU %",
+                "customName": "Consumo medio CPU %",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,
@@ -244,7 +244,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "Média consumo de Memoria %",
+                "customName": "Consumo medio de Memoria %",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,
@@ -286,7 +286,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "Processo Enviados e Recebidos / segundo",
+                "customName": "Processo Enviado y recibido por segundo",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,
@@ -331,7 +331,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "Total de Conexões no DB",
+                "customName": "Total de conexiones en la base de datos",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,
@@ -361,7 +361,7 @@
             }
         },
         {
-            "name": "Banco de Dados",
+            "name": "Base de datos",
             "tileType": "HEADER",
             "configured": true,
             "bounds": {
@@ -385,7 +385,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "Média de Falha (HTTP 5xx  errors)",
+                "customName": "Promedio de Fallas (HTTP 5xx errors)",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,
@@ -427,7 +427,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "Volume de HTTP 5xx ",
+                "customName": "Volumen de HTTP 5xx ",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,
@@ -469,7 +469,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "Volume Serviços mais utilizados",
+                "customName": "Volumen de servicios más utilizados",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,
@@ -511,7 +511,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "Média de conexões com Falha",
+                "customName": "Promedio de conexiones con falla",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,
@@ -553,7 +553,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "Volume total de Conexões",
+                "customName": "Volumen total de conexiones",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,

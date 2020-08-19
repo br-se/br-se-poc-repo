@@ -13,7 +13,7 @@
         }
     },
     "dashboardMetadata": {
-        "name": "Negócio Digital - Jornada dos Clientes",
+        "name": "Negocio digital - Flujo del cliente",
         "shared": true,
         "sharingDetails": {
             "linkShared": true,
@@ -26,7 +26,7 @@
     },
     "tiles": [
         {
-            "name": "Satisfação da Jornada dos Usuários",
+            "name": "Satisfacción del usuario",
             "tileType": "HEADER",
             "configured": true,
             "bounds": {
@@ -48,7 +48,7 @@
                 "height": 608
             },
             "tileFilter": {},
-            "customName": "Satisfação",
+            "customName": "Satisfacción",
             "query": "select DISTINCT useraction.apdexCategory, count(*) FROM usersession where useraction.apdexCategory <> \"UNKNOWN\" GROUP BY useraction.apdexCategory",
             "type": "PIE_CHART"
         },
@@ -63,8 +63,8 @@
                 "height": 190
             },
             "tileFilter": {},
-            "customName": "Satisfeitas",
-            "query": "SELECT DISTINCT count(userSessionId) as \"Sessões\" FROM usersession WHERE useraction.apdexCategory = \"SATISFIED\"",
+            "customName": "Satisfecho",
+            "query": "SELECT DISTINCT count(userSessionId) as \"Sessiones\" FROM usersession WHERE useraction.apdexCategory = \"SATISFIED\"",
             "type": "SINGLE_VALUE",
             "timeFrameShift": "-2h"
         },
@@ -79,8 +79,8 @@
                 "height": 380
             },
             "tileFilter": {},
-            "customName": "Satisfeitas",
-            "query": "SELECT DISTINCT DATETIME(starttime, 'MM-dd', '1d'), count(*) as \"Sessões Satisfeitas\" FROM usersession WHERE useraction.apdexCategory = \"SATISFIED\"",
+            "customName": "Satisfechas",
+            "query": "SELECT DISTINCT DATETIME(starttime, 'MM-dd', '1d'), count(*) as \"Sessiones satisfechas\" FROM usersession WHERE useraction.apdexCategory = \"SATISFIED\"",
             "type": "COLUMN_CHART",
             "visualizationConfig": {
                 "hasAxisBucketing": true
@@ -97,8 +97,8 @@
                 "height": 380
             },
             "tileFilter": {},
-            "customName": "Sessões que contém erros",
-            "query": "select DISTINCT DATETIME(starttime, 'MM-dd', '1d'), count(*) as \"Sessões que contém erro\" FROM usersession where useraction.errorCount = 0",
+            "customName": "Sessiones que contiene errores",
+            "query": "select DISTINCT DATETIME(starttime, 'MM-dd', '1d'), count(*) as \"Sessiones que contiene errores\" FROM usersession where useraction.errorCount = 0",
             "type": "COLUMN_CHART",
             "visualizationConfig": {
                 "hasAxisBucketing": true
@@ -116,7 +116,7 @@
             },
             "tileFilter": {},
             "customName": "Tolerantes",
-            "query": "SELECT DISTINCT count(userSessionId) as \"Sessões\" FROM usersession WHERE useraction.apdexCategory = \"TOLERATING\"",
+            "query": "SELECT DISTINCT count(userSessionId) as \"Sessiones\" FROM usersession WHERE useraction.apdexCategory = \"TOLERATING\"",
             "type": "SINGLE_VALUE",
             "timeFrameShift": "-2h"
         },
@@ -132,7 +132,7 @@
             },
             "tileFilter": {},
             "customName": "Frustradas",
-            "query": "SELECT DISTINCT count(userSessionId) as \"Sessões\" FROM usersession WHERE useraction.apdexCategory = \"FRUSTRATED\"",
+            "query": "SELECT DISTINCT count(userSessionId) as \"Sessiones\" FROM usersession WHERE useraction.apdexCategory = \"FRUSTRATED\"",
             "type": "SINGLE_VALUE",
             "timeFrameShift": "-2h"
         },
@@ -148,7 +148,7 @@
             },
             "tileFilter": {},
             "customName": "Tolerantes",
-            "query": "SELECT DISTINCT DATETIME(starttime, 'MM-dd', '1d'), count(*) as \"Sessões Satisfeitas\" FROM usersession WHERE useraction.apdexCategory = \"TOLERATING\"",
+            "query": "SELECT DISTINCT DATETIME(starttime, 'MM-dd', '1d'), count(*) as \"Sessiones Tolerantes\" FROM usersession WHERE useraction.apdexCategory = \"TOLERATING\"",
             "type": "COLUMN_CHART",
             "visualizationConfig": {
                 "hasAxisBucketing": true
@@ -166,14 +166,14 @@
             },
             "tileFilter": {},
             "customName": "Frustradas",
-            "query": "SELECT DISTINCT DATETIME(starttime, 'MM-dd', '1d'), count(*) as \"Sessões Frustradas\" FROM usersession WHERE useraction.apdexCategory = \"FRUSTRATED\"",
+            "query": "SELECT DISTINCT DATETIME(starttime, 'MM-dd', '1d'), count(*) as \"Sessiones Frustradas\" FROM usersession WHERE useraction.apdexCategory = \"FRUSTRATED\"",
             "type": "COLUMN_CHART",
             "visualizationConfig": {
                 "hasAxisBucketing": true
             }
         },
         {
-            "name": "Características dos Clientes",
+            "name": "Características del cliente",
             "tileType": "HEADER",
             "configured": true,
             "bounds": {
@@ -224,8 +224,8 @@
                 "height": 304
             },
             "tileFilter": {},
-            "customName": "Top Cidades",
-            "query": "select top(city ,5) as 'Municípios', count(*) as '# Sessões' from usersession where city is not null GROUP BY city",
+            "customName": "Top ciudades",
+            "query": "select top(city ,5) as 'Ciudades', count(*) as '# Sessiones' from usersession where city is not null GROUP BY city",
             "type": "PIE_CHART"
         },
         {
@@ -240,7 +240,7 @@
             },
             "tileFilter": {},
             "customName": "Top Estados",
-            "query": "select top(region ,5) as 'Estados', count(*) as '# Sessões' from usersession where region is not null GROUP BY region",
+            "query": "select top(region ,5) as 'Estados', count(*) as '# Sessiones' from usersession where region is not null GROUP BY region",
             "type": "PIE_CHART"
         },
         {
@@ -254,8 +254,8 @@
                 "height": 304
             },
             "tileFilter": {},
-            "customName": "Tipo de Acesso",
-            "query": "select top(browserType, 6) as 'Top Browsers', count(*) as '# Sessões'  from usersession where browserType is not null GROUP BY browserType",
+            "customName": "Tipo de Acceso",
+            "query": "select top(browserType, 6) as 'Top Browsers', count(*) as '# Sessiones'  from usersession where browserType is not null GROUP BY browserType",
             "type": "PIE_CHART"
         },
         {
@@ -270,11 +270,11 @@
             },
             "tileFilter": {},
             "customName": "Top Browsers",
-            "query": "select top(browserMajorVersion, 6) as 'Top Browsers', count(*) as '# Sessões'  from usersession where browserMajorVersion is not null GROUP BY browserMajorVersion",
+            "query": "select top(browserMajorVersion, 6) as 'Top Browsers', count(*) as '# Sessiones'  from usersession where browserMajorVersion is not null GROUP BY browserMajorVersion",
             "type": "PIE_CHART"
         },
         {
-            "name": "Tendência na linha do tempo",
+            "name": "Tendencia en la línea de tiempo",
             "tileType": "HEADER",
             "configured": true,
             "bounds": {
@@ -296,8 +296,8 @@
                 "height": 418
             },
             "tileFilter": {},
-            "customName": "Funil de Satisfação  -  Atual vs 1 semana atrás",
-            "query": "SELECT FUNNEL (useraction.apdexCategory =\"SATISFIED\" as \"Satisfeitos\", useraction.apdexCategory= \"TOLERATING\" as \"Tolerantes\", useraction.apdexCategory= \"FRUSTRATED\" as \"Frustrados\") FROM usersession",
+            "customName": "Flujo de Satisfacción  -  Actual vs hace una semana",
+            "query": "SELECT FUNNEL (useraction.apdexCategory =\"SATISFIED\" as \"Satisfechos\", useraction.apdexCategory= \"TOLERATING\" as \"Tolerantes\", useraction.apdexCategory= \"FRUSTRATED\" as \"Frustrados\") FROM usersession",
             "type": "FUNNEL",
             "timeFrameShift": "-1w"
         },
@@ -312,7 +312,7 @@
                 "height": 190
             },
             "tileFilter": {},
-            "customName": "Usabilidade - qtd rage clicks po sessão",
+            "customName": "Usabilidad - rage clics por sessione",
             "query": "select count (numberOfRageClicks) from usersession",
             "type": "SINGLE_VALUE",
             "timeFrameShift": "-2h"

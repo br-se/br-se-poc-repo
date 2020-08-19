@@ -1,91 +1,91 @@
 [
     {
         "filename": "ecoinfra.json",
-        "description": "Infraestrutura também necessita ter uma visão ampla da saúde geral, porém com métricas específicas que lhes de um apoio em seu dia a dia.",
+        "description": "La infraestructura también debe tener una visión amplia de la salud general, pero con métricas específicas que les den apoyo en su vida diaria.",
         "type": "FIRST_DAY",
-        "prettyName": "Ecossistemas e Infraestrutura"
+        "prettyName": "Ecosistemas e infraestructura"
     },
     {
         "filename": "centroops.json",
-        "description": "A operação, precisa de uma visão clara e ágil de onde os problemas estão ocorrendo e quais serviços estão sendo afetados.",
+        "description": "La operación necesita una visión clara y ágil de dónde se están produciendo problemas y qué servicios se ven afectados.",
         "type": "FIRST_DAY",
-        "prettyName": "Centro de Operações"
+        "prettyName": "Centro de Operaciones"
     },
     {
         "filename": "negocios.json",
-        "description": "O time de Negócio, deve tomar decisões baseando-se na experiência de seus clientes.",
+        "description": "El equipo de negocios debe tomar decisiones basadas en la experiencia de sus clientes.",
         "type": "FIRST_DAY",
-        "prettyName": "Jornada de Negócio"
+        "prettyName": "Flujo de Negocio"
     },
     {
         "filename": "quality.json",
-        "description": "O time de dev ou qualidade pode validar suas releases para não correrem risco quando forem para produção.",
+        "description": "El equipo de desarrollo o calidad puede validar sus lanzamientos para que no se arriesguen cuando entren en producción.",
         "type": "FIRST_DAY",
-        "prettyName": "Assessment de Qualidade"
+        "prettyName": "Evaluación de la calidad"
     },
     {
         "filename": "tatic.json",
-        "description": "Para o time de arquitetura, uma visão completa desde da percepção dos usuários como também da qualidade dos serviços e com possibilidades de descer o nível caso necessário.",
+        "description": "Para el equipo de arquitectura, una visión completa desde la percepción de los usuarios, así como la calidad de los servicios y con posibilidades de bajar el nivel si es necesario.",
         "type": "FIRST_DAY",
-        "prettyName": "Tático - Aplicações de Negócio"
+        "prettyName": "Aplicaciones de Negocio"
     },
     {
         "filename": "aws-master-v2.json",
-        "description": "Indicadores baseados na integração com a conta da AWS com a visão Geral dos principais Produtos",
+        "description": "Indicadores basados en la integración con la cuenta de AWS con la información general de los productos clave",
         "type": "AWS",
         "prettyName": "AWS Performance"
     },
     {
         "filename": "aws-granular-alb-v1.json",
-        "description": "Indicadores baseados na integração com a conta da AWS com a visão de forma Granular do produto",
+        "description": "Indicadores basados en la integración con la cuenta de AWS con la vista de forma del producto granular",
         "type": "AWS",
         "prettyName": "AWS ALB Granular"
     },
     {
         "filename": "aws-granular-apigateway-v1.json",
-        "description": "Indicadores baseados na integração com a conta da AWS com a visão de forma Granular do produto",
+        "description": "Indicadores basados en la integración con la cuenta de AWS con la vista de forma del producto granular",
         "type": "AWS",
-        "prettyName": "AWS Api Gateway Granular"
+        "prettyName": "AWS API Gateway Granular"
     },
     {
         "filename": "aws-granular-dynamodb-v1.json",
-        "description": "Indicadores baseados na integração com a conta da AWS com a visão de forma Granular do produto",
+        "description": "Indicadores basados en la integración con la cuenta de AWS con la vista de forma del producto granular",
         "type": "AWS",
         "prettyName": "AWS DynamoDB Granular"
     },
     {
         "filename": "aws-granular-ebs-v1.json",
-        "description": "Indicadores baseados na integração com a conta da AWS com a visão de forma Granular do produto",
+        "description": "Indicadores basados en la integración con la cuenta de AWS con la vista de forma del producto granular",
         "type": "AWS",
         "prettyName": "AWS EBS Granular"
     },
     {
         "filename": "aws-granular-lambda-v1.json",
-        "description": "Indicadores baseados na integração com a conta da AWS com a visão de forma Granular do produto",
+        "description": "Indicadores basados en la integración con la cuenta de AWS con la vista de forma del producto granular",
         "type": "AWS",
         "prettyName": "AWS Lambda Granular"
     },
     {
         "filename": "aws-granular-nlb-v1.json",
-        "description": "Indicadores baseados na integração com a conta da AWS com a visão de forma Granular do produto",
+        "description": "Indicadores basados en la integración con la cuenta de AWS con la vista de forma del producto granular",
         "type": "AWS",
         "prettyName": "AWS NLB Granular"
     },
     {
         "filename": "aws-granular-rds-v1.json",
-        "description": "Indicadores baseados na integração com a conta da AWS com a visão de forma Granular do produto",
+        "description": "Indicadores basados en la integración con la cuenta de AWS con la vista de forma del producto granular",
         "type": "AWS",
         "prettyName": "AWS RDS Granular"
     },
     {
         "filename": "aws-granular-s3-v1.json",
-        "description": "Indicadores baseados na integração com a conta da AWS com a visão de forma Granular do produto",
+        "description": "Indicadores basados en la integración con la cuenta de AWS con la vista de forma del producto granular",
         "type": "AWS",
         "prettyName": "AWS S3 Granular"
     },
     {
         "filename": "aws-granular-sqs-v1.json",
-        "description": "Indicadores baseados na integração com a conta da AWS com a visão de forma Granular do produto",
+        "description": "Indicadores basados en la integración con la cuenta de AWS con la vista de forma del producto granular",
         "type": "AWS",
         "prettyName": "AWS SQS Granular"
     }

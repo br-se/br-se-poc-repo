@@ -6,7 +6,7 @@
         "clusterVersion": "1.182.97.20191206-105912"
     },
     "dashboardMetadata": {
-        "name": "Assessment de Qualidade",
+        "name": "Evaluación de la calidad",
         "shared": true,
         "sharingDetails": {
             "linkShared": true,
@@ -29,8 +29,8 @@
                 "height": 608
             },
             "tileFilter": {},
-            "customName": "Top Aplicações",
-            "query": "SELECT TOP(application, 15) As \"Nome\", SUM(errorCount) AS \"Qtde Erros\" FROM useraction where errorCount >= 1 GROUP BY application order by sum(errorCount) DESC",
+            "customName": "Top Aplicaciones",
+            "query": "SELECT TOP(application, 15) As \"Nombre\", SUM(errorCount) AS \"Cant Errores\" FROM useraction where errorCount >= 1 GROUP BY application order by sum(errorCount) DESC",
             "type": "TABLE",
             "timeFrameShift": "-1w"
         },
@@ -45,8 +45,8 @@
                 "height": 304
             },
             "tileFilter": {},
-            "customName": "Total de Erros",
-            "query": "SELECT sum(errorCount) AS \"Quantidade de Erros\" FROM useraction",
+            "customName": "Total de Errores",
+            "query": "SELECT sum(errorCount) AS \"Cantidad de Errores\" FROM useraction",
             "type": "SINGLE_VALUE",
             "timeFrameShift": "-1w"
         },
@@ -61,8 +61,8 @@
                 "height": 304
             },
             "tileFilter": {},
-            "customName": "Total de Erros",
-            "query": "SELECT DATETIME(starttime, 'HH:mm', '10m'), SUM(errorCount) AS \"Quantidade de Erros\" FROM useraction group by DATETIME(starttime, 'HH:mm', '10m')",
+            "customName": "Total de Errores",
+            "query": "SELECT DATETIME(starttime, 'HH:mm', '10m'), SUM(errorCount) AS \"Cantidad de Errores\" FROM useraction group by DATETIME(starttime, 'HH:mm', '10m')",
             "type": "COLUMN_CHART",
             "visualizationConfig": {
                 "hasAxisBucketing": true
@@ -79,8 +79,8 @@
                 "height": 304
             },
             "tileFilter": {},
-            "customName": "Top ações dos usuários",
-            "query": "SELECT TOP(name, 15) As \"Nome da Ação\", application AS \"Aplicação\", SUM(errorCount) AS \"Qtde Erros\" FROM useraction where errorCount >= 1 GROUP BY name, application order by sum(errorCount) DESC",
+            "customName": "Top acciones de los usuários",
+            "query": "SELECT TOP(name, 15) As \"Nombre da Acción\", application AS \"Aplicación\", SUM(errorCount) AS \"Qtde Errores\" FROM useraction where errorCount >= 1 GROUP BY name, application order by sum(errorCount) DESC",
             "type": "TABLE",
             "timeFrameShift": "-1w"
         },
@@ -95,8 +95,8 @@
                 "height": 304
             },
             "tileFilter": {},
-            "customName": "Top erros por Navegador",
-            "query": "SELECT TOP(usersession.browserFamily, 15) As \"Navegador\", SUM(errorCount) AS \"Qtde Erros\" FROM useraction where usersession.browserFamily IS NOT NULL and errorCount >= 1 GROUP BY usersession.browserFamily order by sum(errorCount) DESC",
+            "customName": "Top Errores por Browser",
+            "query": "SELECT TOP(usersession.browserFamily, 15) As \"Browser\", SUM(errorCount) AS \"Qtde Errores\" FROM useraction where usersession.browserFamily IS NOT NULL and errorCount >= 1 GROUP BY usersession.browserFamily order by sum(errorCount) DESC",
             "type": "TABLE",
             "timeFrameShift": "-1w"
         },
@@ -111,8 +111,8 @@
                 "height": 304
             },
             "tileFilter": {},
-            "customName": "Top erros por Sistema Operacional",
-            "query": "SELECT TOP(usersession.osFamily, 15) As \"Sistema Operacional\", SUM(errorCount) AS \"Qtde Erros\" FROM useraction where usersession.osFamily IS NOT NULL and errorCount >= 1 GROUP BY usersession.osFamily ORDER BY sum(errorCount) DESC",
+            "customName": "Top Errores por Sistema Operacional",
+            "query": "SELECT TOP(usersession.osFamily, 15) As \"Sistema Operacional\", SUM(errorCount) AS \"Qtde Errores\" FROM useraction where usersession.osFamily IS NOT NULL and errorCount >= 1 GROUP BY usersession.osFamily ORDER BY sum(errorCount) DESC",
             "type": "TABLE",
             "timeFrameShift": "-1w"
         },
@@ -129,7 +129,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "Web Request (% Taxa de Falhas)",
+                "customName": "Web Request (% Tasa de Fallas)",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,
@@ -177,7 +177,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "Web Services (% Taxa de Falhas)",
+                "customName": "Web Services (% Tasa de Fallas)",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,
@@ -225,7 +225,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "Web Request (Tempo de resposta médio)",
+                "customName": "Web Request (Tiempo de respuesta promedio)",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,
@@ -273,7 +273,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "Web Services (Tempo de resposta médio)",
+                "customName": "Web Services (Tiempo de respuesta promedio)",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,
@@ -309,7 +309,7 @@
             }
         },
         {
-            "name": "Aplicações - Sumário de Erros",
+            "name": "Aplicaciones - Resumen de Errores",
             "tileType": "HEADER",
             "configured": true,
             "bounds": {
@@ -321,7 +321,7 @@
             "tileFilter": {}
         },
         {
-            "name": "Serviços FrontEnd",
+            "name": "Servicios FrontEnd",
             "tileType": "HEADER",
             "configured": true,
             "bounds": {
@@ -343,8 +343,8 @@
                 "height": 608
             },
             "tileFilter": {},
-            "customName": "Top Aplicações",
-            "query": "SELECT TOP(application, 15) As \"Nome\", AVG(visuallyCompleteTime) AS \"Tempo\" FROM useraction where visuallyCompleteTime IS NOT NULL GROUP BY application order by AVG(visuallyCompleteTime) DESC",
+            "customName": "Top Aplicaciones",
+            "query": "SELECT TOP(application, 15) As \"Nombre\", AVG(visuallyCompleteTime) AS \"Tiempo\" FROM useraction where visuallyCompleteTime IS NOT NULL GROUP BY application order by AVG(visuallyCompleteTime) DESC",
             "type": "TABLE",
             "timeFrameShift": "-1w"
         },
@@ -359,8 +359,8 @@
                 "height": 304
             },
             "tileFilter": {},
-            "customName": "Tempo de resposta médio",
-            "query": "SELECT AVG(visuallyCompleteTime) AS \"Tempo médio\" FROM useraction",
+            "customName": "Tiempo de respuesta promedio",
+            "query": "SELECT AVG(visuallyCompleteTime) AS \"Tiempo promedio\" FROM useraction",
             "type": "SINGLE_VALUE",
             "timeFrameShift": "-1w"
         },
@@ -375,8 +375,8 @@
                 "height": 304
             },
             "tileFilter": {},
-            "customName": "Tempo de Resposta (Médio x Máximo)",
-            "query": "SELECT DATETIME(starttime, 'HH:mm', '5m') As \"Horário\", AVG(visuallyCompleteTime) AS \"Tempo médio\", MAX(visuallyCompleteTime) AS \"Tempo máximo\" FROM useraction group by DATETIME(starttime, 'HH:mm', '5m')",
+            "customName": "Tiempo de Resposta (Médio x Máximo)",
+            "query": "SELECT DATETIME(starttime, 'HH:mm', '5m') As \"Horário\", AVG(visuallyCompleteTime) AS \"Tiempo promedio\", MAX(visuallyCompleteTime) AS \"Tiempo máximo\" FROM useraction group by DATETIME(starttime, 'HH:mm', '5m')",
             "type": "LINE_CHART",
             "visualizationConfig": {
                 "hasAxisBucketing": true
@@ -393,8 +393,8 @@
                 "height": 304
             },
             "tileFilter": {},
-            "customName": "Top açãp dos usuários",
-            "query": "SELECT TOP(name, 5) As \"Nome da Ação\", application As \"Aplicação\", avg(visuallyCompleteTime) AS \"Tempo\" FROM useraction where visuallyCompleteTime IS NOT NULL GROUP BY name, application order by avg(visuallyCompleteTime) DESC",
+            "customName": "Top açãp de los usuários",
+            "query": "SELECT TOP(name, 5) As \"Nombre da Acción\", application As \"Aplicación\", avg(visuallyCompleteTime) AS \"Tiempo\" FROM useraction where visuallyCompleteTime IS NOT NULL GROUP BY name, application order by avg(visuallyCompleteTime) DESC",
             "type": "TABLE",
             "timeFrameShift": "-1w"
         },
@@ -409,8 +409,8 @@
                 "height": 304
             },
             "tileFilter": {},
-            "customName": "Top tempos por Navegador",
-            "query": "SELECT TOP(usersession.browserFamily, 15) As \"Navegador\", AVG(visuallyCompleteTime) AS \"Tempo\" FROM useraction where visuallyCompleteTime IS NOT NULL GROUP BY usersession.browserFamily order by avg(visuallyCompleteTime) DESC",
+            "customName": "Top tiempos por Browser",
+            "query": "SELECT TOP(usersession.browserFamily, 15) As \"Browser\", AVG(visuallyCompleteTime) AS \"Tiempo\" FROM useraction where visuallyCompleteTime IS NOT NULL GROUP BY usersession.browserFamily order by avg(visuallyCompleteTime) DESC",
             "type": "TABLE",
             "timeFrameShift": "-1w"
         },
@@ -425,8 +425,8 @@
                 "height": 304
             },
             "tileFilter": {},
-            "customName": "Top tempos por Sistema Operacional",
-            "query": "SELECT TOP(usersession.osFamily, 15) As \"Sistema Operacional\", AVG(visuallyCompleteTime) AS \"Tempo\" FROM useraction where visuallyCompleteTime IS NOT NULL GROUP BY usersession.osFamily order by avg(visuallyCompleteTime) DESC",
+            "customName": "Top tiempos por Sistema Operacional",
+            "query": "SELECT TOP(usersession.osFamily, 15) As \"Sistema Operacional\", AVG(visuallyCompleteTime) AS \"Tiempo\" FROM useraction where visuallyCompleteTime IS NOT NULL GROUP BY usersession.osFamily order by avg(visuallyCompleteTime) DESC",
             "type": "TABLE",
             "timeFrameShift": "-1w"
         },
@@ -443,7 +443,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "Messaging (% Taxa de Falhas)",
+                "customName": "Messaging (% Tasa de Fallas)",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,
@@ -491,7 +491,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "Database (% Taxa de Falhas)",
+                "customName": "Database (% Tasa de Fallas)",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,
@@ -539,7 +539,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "Messaging (Tempo de resposta médio)",
+                "customName": "Messaging (Tiempo de respuesta promedio)",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,
@@ -587,7 +587,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "Database (Tempo de resposta médio)",
+                "customName": "Database (Tiempo de respuesta promedio)",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,
@@ -623,7 +623,7 @@
             }
         },
         {
-            "name": "Aplicações - Sumário de Desempenho",
+            "name": "Aplicaciones - Resumen de Performance",
             "tileType": "HEADER",
             "configured": true,
             "bounds": {
@@ -635,7 +635,7 @@
             "tileFilter": {}
         },
         {
-            "name": "Serviços BackEnd",
+            "name": "Servicios BackEnd",
             "tileType": "HEADER",
             "configured": true,
             "bounds": {

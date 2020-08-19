@@ -13,7 +13,7 @@
         }
     },
     "dashboardMetadata": {
-        "name": "Centro de Operações",
+        "name": "Centro de Operaciones",
         "shared": true,
         "sharingDetails": {
             "linkShared": true,
@@ -152,7 +152,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "Taxa de Falhas - 5xx",
+                "customName": "Tasa de Fallas - 5xx",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,
@@ -194,7 +194,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "Consumo de CPU por serviço",
+                "customName": "Consumo de CPU por servicio",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,
@@ -236,7 +236,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "Tempo de Resposta por serviço",
+                "customName": "Tiempo de respuesta por servicio",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,
@@ -278,7 +278,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "Falhas de conexão Database",
+                "customName": "Errores de conexión de base de datos",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,
@@ -320,7 +320,7 @@
             "tileFilter": {},
             "filterConfig": {
                 "type": "MIXED",
-                "customName": "CPU disponível vs Memoria Disponível",
+                "customName": "CPU disponible vs Memoria disponible",
                 "defaultName": "Custom chart",
                 "chartConfig": {
                     "legendShown": true,
