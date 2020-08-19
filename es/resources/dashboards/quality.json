@@ -1,0 +1,650 @@
+{
+    "metadata": {
+        "configurationVersions": [
+            3
+        ],
+        "clusterVersion": "1.182.97.20191206-105912"
+    },
+    "dashboardMetadata": {
+        "name": "Assessment de Qualidade",
+        "shared": true,
+        "sharingDetails": {
+            "linkShared": true,
+            "published": true
+        },
+        "dashboardFilter": {
+            "timeframe": "",
+            "managementZone": null
+        }
+    },
+    "tiles": [
+        {
+            "name": "User Sessions Query",
+            "tileType": "DTAQL",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 0,
+                "width": 380,
+                "height": 608
+            },
+            "tileFilter": {},
+            "customName": "Top Aplicações",
+            "query": "SELECT TOP(application, 15) As \"Nome\", SUM(errorCount) AS \"Qtde Erros\" FROM useraction where errorCount >= 1 GROUP BY application order by sum(errorCount) DESC",
+            "type": "TABLE",
+            "timeFrameShift": "-1w"
+        },
+        {
+            "name": "User Sessions Query",
+            "tileType": "DTAQL",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 380,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {},
+            "customName": "Total de Erros",
+            "query": "SELECT sum(errorCount) AS \"Quantidade de Erros\" FROM useraction",
+            "type": "SINGLE_VALUE",
+            "timeFrameShift": "-1w"
+        },
+        {
+            "name": "User Sessions Query",
+            "tileType": "DTAQL",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 684,
+                "width": 722,
+                "height": 304
+            },
+            "tileFilter": {},
+            "customName": "Total de Erros",
+            "query": "SELECT DATETIME(starttime, 'HH:mm', '10m'), SUM(errorCount) AS \"Quantidade de Erros\" FROM useraction group by DATETIME(starttime, 'HH:mm', '10m')",
+            "type": "COLUMN_CHART",
+            "visualizationConfig": {
+                "hasAxisBucketing": true
+            }
+        },
+        {
+            "name": "User Sessions Query",
+            "tileType": "DTAQL",
+            "configured": true,
+            "bounds": {
+                "top": 342,
+                "left": 380,
+                "width": 418,
+                "height": 304
+            },
+            "tileFilter": {},
+            "customName": "Top ações dos usuários",
+            "query": "SELECT TOP(name, 15) As \"Nome da Ação\", application AS \"Aplicação\", SUM(errorCount) AS \"Qtde Erros\" FROM useraction where errorCount >= 1 GROUP BY name, application order by sum(errorCount) DESC",
+            "type": "TABLE",
+            "timeFrameShift": "-1w"
+        },
+        {
+            "name": "User Sessions Query",
+            "tileType": "DTAQL",
+            "configured": true,
+            "bounds": {
+                "top": 342,
+                "left": 798,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {},
+            "customName": "Top erros por Navegador",
+            "query": "SELECT TOP(usersession.browserFamily, 15) As \"Navegador\", SUM(errorCount) AS \"Qtde Erros\" FROM useraction where usersession.browserFamily IS NOT NULL and errorCount >= 1 GROUP BY usersession.browserFamily order by sum(errorCount) DESC",
+            "type": "TABLE",
+            "timeFrameShift": "-1w"
+        },
+        {
+            "name": "User Sessions Query",
+            "tileType": "DTAQL",
+            "configured": true,
+            "bounds": {
+                "top": 342,
+                "left": 1102,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {},
+            "customName": "Top erros por Sistema Operacional",
+            "query": "SELECT TOP(usersession.osFamily, 15) As \"Sistema Operacional\", SUM(errorCount) AS \"Qtde Erros\" FROM useraction where usersession.osFamily IS NOT NULL and errorCount >= 1 GROUP BY usersession.osFamily ORDER BY sum(errorCount) DESC",
+            "type": "TABLE",
+            "timeFrameShift": "-1w"
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 1406,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Web Request (% Taxa de Falhas)",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.errors.total.rate",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TYPE": [
+                            "1"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 342,
+                "left": 1406,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Web Services (% Taxa de Falhas)",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.errors.total.rate",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TYPE": [
+                            "2"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 38,
+                "left": 1710,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Web Request (Tempo de resposta médio)",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.response.time",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TYPE": [
+                            "1"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 342,
+                "left": 1710,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Web Services (Tempo de resposta médio)",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.response.time",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TYPE": [
+                            "2"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Aplicações - Sumário de Erros",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 0,
+                "width": 1406,
+                "height": 38
+            },
+            "tileFilter": {}
+        },
+        {
+            "name": "Serviços FrontEnd",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 0,
+                "left": 1406,
+                "width": 608,
+                "height": 38
+            },
+            "tileFilter": {}
+        },
+        {
+            "name": "User Sessions Query",
+            "tileType": "DTAQL",
+            "configured": true,
+            "bounds": {
+                "top": 684,
+                "left": 0,
+                "width": 380,
+                "height": 608
+            },
+            "tileFilter": {},
+            "customName": "Top Aplicações",
+            "query": "SELECT TOP(application, 15) As \"Nome\", AVG(visuallyCompleteTime) AS \"Tempo\" FROM useraction where visuallyCompleteTime IS NOT NULL GROUP BY application order by AVG(visuallyCompleteTime) DESC",
+            "type": "TABLE",
+            "timeFrameShift": "-1w"
+        },
+        {
+            "name": "User Sessions Query",
+            "tileType": "DTAQL",
+            "configured": true,
+            "bounds": {
+                "top": 684,
+                "left": 380,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {},
+            "customName": "Tempo de resposta médio",
+            "query": "SELECT AVG(visuallyCompleteTime) AS \"Tempo médio\" FROM useraction",
+            "type": "SINGLE_VALUE",
+            "timeFrameShift": "-1w"
+        },
+        {
+            "name": "User Sessions Query",
+            "tileType": "DTAQL",
+            "configured": true,
+            "bounds": {
+                "top": 684,
+                "left": 684,
+                "width": 722,
+                "height": 304
+            },
+            "tileFilter": {},
+            "customName": "Tempo de Resposta (Médio x Máximo)",
+            "query": "SELECT DATETIME(starttime, 'HH:mm', '5m') As \"Horário\", AVG(visuallyCompleteTime) AS \"Tempo médio\", MAX(visuallyCompleteTime) AS \"Tempo máximo\" FROM useraction group by DATETIME(starttime, 'HH:mm', '5m')",
+            "type": "LINE_CHART",
+            "visualizationConfig": {
+                "hasAxisBucketing": true
+            }
+        },
+        {
+            "name": "User Sessions Query",
+            "tileType": "DTAQL",
+            "configured": true,
+            "bounds": {
+                "top": 988,
+                "left": 380,
+                "width": 418,
+                "height": 304
+            },
+            "tileFilter": {},
+            "customName": "Top açãp dos usuários",
+            "query": "SELECT TOP(name, 5) As \"Nome da Ação\", application As \"Aplicação\", avg(visuallyCompleteTime) AS \"Tempo\" FROM useraction where visuallyCompleteTime IS NOT NULL GROUP BY name, application order by avg(visuallyCompleteTime) DESC",
+            "type": "TABLE",
+            "timeFrameShift": "-1w"
+        },
+        {
+            "name": "User Sessions Query",
+            "tileType": "DTAQL",
+            "configured": true,
+            "bounds": {
+                "top": 988,
+                "left": 798,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {},
+            "customName": "Top tempos por Navegador",
+            "query": "SELECT TOP(usersession.browserFamily, 15) As \"Navegador\", AVG(visuallyCompleteTime) AS \"Tempo\" FROM useraction where visuallyCompleteTime IS NOT NULL GROUP BY usersession.browserFamily order by avg(visuallyCompleteTime) DESC",
+            "type": "TABLE",
+            "timeFrameShift": "-1w"
+        },
+        {
+            "name": "User Sessions Query",
+            "tileType": "DTAQL",
+            "configured": true,
+            "bounds": {
+                "top": 988,
+                "left": 1102,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {},
+            "customName": "Top tempos por Sistema Operacional",
+            "query": "SELECT TOP(usersession.osFamily, 15) As \"Sistema Operacional\", AVG(visuallyCompleteTime) AS \"Tempo\" FROM useraction where visuallyCompleteTime IS NOT NULL GROUP BY usersession.osFamily order by avg(visuallyCompleteTime) DESC",
+            "type": "TABLE",
+            "timeFrameShift": "-1w"
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 684,
+                "left": 1406,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Messaging (% Taxa de Falhas)",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.errors.total.rate",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TYPE": [
+                            "6"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 988,
+                "left": 1406,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Database (% Taxa de Falhas)",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.errors.total.rate",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TYPE": [
+                            "3"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 684,
+                "left": 1710,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Messaging (Tempo de resposta médio)",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.response.time",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TYPE": [
+                            "6"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Custom chart",
+            "tileType": "CUSTOM_CHARTING",
+            "configured": true,
+            "bounds": {
+                "top": 988,
+                "left": 1710,
+                "width": 304,
+                "height": 304
+            },
+            "tileFilter": {},
+            "filterConfig": {
+                "type": "MIXED",
+                "customName": "Database (Tempo de resposta médio)",
+                "defaultName": "Custom chart",
+                "chartConfig": {
+                    "legendShown": true,
+                    "type": "TOP_LIST",
+                    "series": [
+                        {
+                            "metric": "builtin:service.response.time",
+                            "aggregation": "AVG",
+                            "type": "LINE",
+                            "entityType": "SERVICE",
+                            "dimensions": [
+                                {
+                                    "id": "0",
+                                    "name": "dt.entity.service",
+                                    "values": [],
+                                    "entityDimension": true
+                                }
+                            ],
+                            "sortAscending": false,
+                            "sortColumn": true,
+                            "aggregationRate": "TOTAL"
+                        }
+                    ],
+                    "resultMetadata": {}
+                },
+                "filtersPerEntityType": {
+                    "SERVICE": {
+                        "SERVICE_TYPE": [
+                            "3"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Aplicações - Sumário de Desempenho",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 646,
+                "left": 0,
+                "width": 1406,
+                "height": 38
+            },
+            "tileFilter": {}
+        },
+        {
+            "name": "Serviços BackEnd",
+            "tileType": "HEADER",
+            "configured": true,
+            "bounds": {
+                "top": 646,
+                "left": 1406,
+                "width": 608,
+                "height": 38
+            },
+            "tileFilter": {}
+        }
+    ]
+}
