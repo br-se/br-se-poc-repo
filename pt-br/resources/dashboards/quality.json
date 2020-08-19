@@ -30,7 +30,7 @@
             },
             "tileFilter": {},
             "customName": "Top Aplicações",
-            "query": "SELECT TOP(application, 15) As \"Nome\", SUM(errorCount) AS \"Qtde Erros\" FROM useraction where errorCount >= 1 GROUP BY application order by sum(errorCount) DESC",
+            "query": "SELECT TOP(application, 15) As \"Nome\", SUM(errorCount) AS \"Qtd Erros\" FROM useraction where errorCount >= 1 GROUP BY application order by sum(errorCount) DESC",
             "type": "TABLE",
             "timeFrameShift": "-1w"
         },
@@ -80,7 +80,7 @@
             },
             "tileFilter": {},
             "customName": "Top ações dos usuários",
-            "query": "SELECT TOP(name, 15) As \"Nome da Ação\", application AS \"Aplicação\", SUM(errorCount) AS \"Qtde Erros\" FROM useraction where errorCount >= 1 GROUP BY name, application order by sum(errorCount) DESC",
+            "query": "SELECT TOP(name, 15) As \"Nome da Ação\", application AS \"Aplicação\", SUM(errorCount) AS \"Qtd Erros\" FROM useraction where errorCount >= 1 GROUP BY name, application order by sum(errorCount) DESC",
             "type": "TABLE",
             "timeFrameShift": "-1w"
         },
@@ -96,7 +96,7 @@
             },
             "tileFilter": {},
             "customName": "Top erros por Navegador",
-            "query": "SELECT TOP(usersession.browserFamily, 15) As \"Navegador\", SUM(errorCount) AS \"Qtde Erros\" FROM useraction where usersession.browserFamily IS NOT NULL and errorCount >= 1 GROUP BY usersession.browserFamily order by sum(errorCount) DESC",
+            "query": "SELECT TOP(usersession.browserFamily, 15) As \"Navegador\", SUM(errorCount) AS \"Qtd Erros\" FROM useraction where usersession.browserFamily IS NOT NULL and errorCount >= 1 GROUP BY usersession.browserFamily order by sum(errorCount) DESC",
             "type": "TABLE",
             "timeFrameShift": "-1w"
         },
@@ -112,7 +112,7 @@
             },
             "tileFilter": {},
             "customName": "Top erros por Sistema Operacional",
-            "query": "SELECT TOP(usersession.osFamily, 15) As \"Sistema Operacional\", SUM(errorCount) AS \"Qtde Erros\" FROM useraction where usersession.osFamily IS NOT NULL and errorCount >= 1 GROUP BY usersession.osFamily ORDER BY sum(errorCount) DESC",
+            "query": "SELECT TOP(usersession.osFamily, 15) As \"Sistema Operacional\", SUM(errorCount) AS \"Qtd Erros\" FROM useraction where usersession.osFamily IS NOT NULL and errorCount >= 1 GROUP BY usersession.osFamily ORDER BY sum(errorCount) DESC",
             "type": "TABLE",
             "timeFrameShift": "-1w"
         },
