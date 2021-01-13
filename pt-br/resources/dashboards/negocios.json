@@ -15,6 +15,7 @@
     "dashboardMetadata": {
         "name": "Negócio Digital - Jornada dos Clientes",
         "shared": true,
+        "owner": "POC",
         "sharingDetails": {
             "linkShared": true,
             "published": true

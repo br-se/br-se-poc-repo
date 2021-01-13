@@ -15,6 +15,7 @@
     "dashboardMetadata": {
         "name": "Ecosistemas e infraestructura",
         "shared": true,
+        "owner": "POC",
         "sharingDetails": {
             "linkShared": true,
             "published": true

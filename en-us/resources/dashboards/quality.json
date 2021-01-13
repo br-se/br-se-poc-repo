@@ -8,6 +8,7 @@
     "dashboardMetadata": {
         "name": "Quality Assessment",
         "shared": true,
+        "owner": "POC",
         "sharingDetails": {
             "linkShared": true,
             "published": true

@@ -15,6 +15,7 @@
   "dashboardMetadata": {
     "name": "Digital Business - Client Journey",
     "shared": true,
+    "owner": "POC",
     "sharingDetails": {
       "linkShared": true,
       "published": true

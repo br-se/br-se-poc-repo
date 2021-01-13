@@ -15,6 +15,7 @@
     "dashboardMetadata": {
         "name": "Negocio digital - Flujo del cliente",
         "shared": true,
+        "owner": "POC",
         "sharingDetails": {
             "linkShared": true,
             "published": true

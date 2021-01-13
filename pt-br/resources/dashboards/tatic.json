@@ -15,6 +15,7 @@
     "dashboardMetadata": {
         "name": "Tático - Aplicações de Negócio",
         "shared": true,
+        "owner": "POC",
         "sharingDetails": {
             "linkShared": true,
             "published": true

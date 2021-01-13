@@ -15,6 +15,7 @@
     "dashboardMetadata": {
         "name": "☁ AWS - DynamoDB",
         "shared": true,
+        "owner": "admin",
         "sharingDetails": {
             "linkShared": true,
             "published": false

@@ -15,6 +15,7 @@
     "dashboardMetadata": {
         "name": "Operation Center",
         "shared": true,
+        "owner": "POC",
         "sharingDetails": {
             "linkShared": true,
             "published": true

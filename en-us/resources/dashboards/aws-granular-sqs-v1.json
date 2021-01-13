@@ -15,6 +15,7 @@
     "dashboardMetadata": {
         "name": "☁ AWS - SQS",
         "shared": true,
+        "owner": "POC",
         "sharingDetails": {
             "linkShared": true,
             "published": false

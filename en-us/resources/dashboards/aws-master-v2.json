@@ -15,6 +15,7 @@
   "dashboardMetadata": {
     "name": "☁ AWS Performance",
     "shared": true,
+    "owner": "POC",
     "sharingDetails": {
       "linkShared": true,
       "published": false
